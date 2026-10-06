@@ -662,6 +662,10 @@ def laptop_key(results):
         "upgrade becomes the lowest. All totals are between RM20,000 and RM100,000, so HOD approval is enough; the "
         "memo should still say so.",
         "",
+        f"Chapter 7 what-if (B comes back RM1,000 higher): RM{rm(b[1][3] + 1000)} against C's adjusted "
+        f"RM{rm(c_adj)}, so C becomes the lowest like-for-like quotation by RM{rm(b[1][3] + 1000 - c_adj)} and the "
+        "recommendation changes. Accept answers that apply the RM1,000 before tax too, if the working is shown.",
+        "",
         "Smaller differences worth praising if spotted: C quotes a sleeve, not a backpack; A has a lower-resolution "
         "1920x1080 screen; C's processor is a 135U; C uses soldered LPDDR5 memory; B's delivery depends on stock.",
         "",
