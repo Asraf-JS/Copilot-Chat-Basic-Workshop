@@ -1,0 +1,178 @@
+{
+  "palette": "copilot",
+  "kicker": "Microsoft 365",
+  "titleLines": [
+    "Copilot Chat",
+    {
+      "highlight": "Basic"
+    },
+    "Workshop"
+  ],
+  "runningTitle": "Copilot Chat Basic Workshop",
+  "subtitle": "One-day participant guide",
+  "blurb": "Check, compare, chase, draft, organise and reuse: run a real purchase from quotation to justification memo with Copilot Chat, Copilot in Outlook, Pages, Notebooks and your own agent, without the paid license.",
+  "coverIcons": [
+    "chat",
+    "doc",
+    "check",
+    "spark"
+  ],
+  "edition": "Participant edition",
+  "year": "2026",
+  "version": "1.0",
+  "author": "Asraf Jaafar Sidik",
+  "authorShort": "Asraf",
+  "credential": "Microsoft Certified Trainer",
+  "repoUrl": "https://github.com/Asraf-JS/Copilot-Chat-Basic-Workshop",
+  "trademark": "Microsoft, Microsoft 365, Copilot, Word, Excel, Outlook, Teams, Edge, OneDrive and SharePoint are trademarks of the Microsoft group of companies. This guide is independent training material and is not published or endorsed by Microsoft. All companies, people and documents in the course scenario are fictional.",
+  "output": "../Copilot-Chat-Basic-Workshop-Book.pdf",
+  "front": [
+    {
+      "title": "About the author",
+      "file": "kit:front/about-the-author.md",
+      "class": "about"
+    }
+  ],
+  "intro": {
+    "title": "Before you begin",
+    "file": "front/introduction.md"
+  },
+  "chapters": [
+    {
+      "notes": "../01-which-copilot-do-i-have/README.md",
+      "exercises": "../01-which-copilot-do-i-have/prompts.md"
+    },
+    {
+      "notes": "../02-find-your-way-around/README.md",
+      "exercises": "../02-find-your-way-around/prompts.md"
+    },
+    {
+      "notes": "../03-write-better-prompts/README.md",
+      "exercises": "../03-write-better-prompts/prompts.md"
+    },
+    {
+      "notes": "../04-compare-the-quotations/README.md",
+      "exercises": "../04-compare-the-quotations/prompts.md"
+    },
+    {
+      "notes": "../05-copilot-in-outlook/README.md",
+      "exercises": "../05-copilot-in-outlook/prompts.md"
+    },
+    {
+      "notes": "../06-from-chat-to-pages/README.md",
+      "exercises": "../06-from-chat-to-pages/prompts.md"
+    },
+    {
+      "notes": "../07-copilot-notebooks/README.md",
+      "exercises": "../07-copilot-notebooks/prompts.md"
+    },
+    {
+      "notes": "../08-build-a-quotation-checker/README.md",
+      "exercises": "../08-build-a-quotation-checker/prompts.md"
+    },
+    {
+      "notes": "../09-copilot-in-office-apps/README.md",
+      "exercises": "../09-copilot-in-office-apps/prompts.md"
+    },
+    {
+      "notes": "../10-capstone/README.md",
+      "exercises": "../10-capstone/prompts.md"
+    },
+    {
+      "notes": "../11-extra-practice/README.md",
+      "exercises": "../11-extra-practice/prompts.md"
+    }
+  ],
+  "backCover": "This book accompanies the one-day Copilot Chat Basic Workshop. It follows one purchase at a fictional Malaysian company, from checking which Copilot you have, through writing requirements with the GCSE framework, comparing three supplier quotations against a procurement policy and chasing the vendors in Outlook, to a justification memo on a Copilot Page, a Notebook for the whole purchase and a Quotation Checker agent you build yourself. Every chapter gives point-and-click steps and ready-to-paste prompts that work with Copilot Chat (Basic), without the paid Microsoft 365 Copilot license.",
+  "programFlow": {
+    "title": "Your Copilot Chat training journey",
+    "lead": "One laptop purchase, start to finish: real work with the Copilot you already have.",
+    "foundations": [
+      {
+        "n": 1,
+        "name": "Which Copilot do I have?",
+        "desc": "Your label, the green shield and what Basic can't do"
+      },
+      {
+        "n": 2,
+        "name": "Find your way around",
+        "desc": "Ways in, the message box and your chats"
+      }
+    ],
+    "steps": [
+      {
+        "n": 3,
+        "app": "Copilot Chat",
+        "icon": "chat",
+        "color": "#7b4be6",
+        "stage": "Ask",
+        "desc": "Draft the vendor requirements with GCSE",
+        "output": "Requirements list"
+      },
+      {
+        "n": 4,
+        "app": "File upload",
+        "icon": "doc",
+        "color": "#2f7bec",
+        "stage": "Compare",
+        "desc": "Compare the quotes and catch the problems",
+        "output": "Checked comparison"
+      },
+      {
+        "n": 5,
+        "app": "Outlook",
+        "icon": "O",
+        "color": "#0f6cbd",
+        "stage": "Chase",
+        "desc": "Summarise replies and draft chasing emails",
+        "output": "Email drafts"
+      },
+      {
+        "n": 6,
+        "app": "Pages",
+        "icon": "lines",
+        "color": "#5b6cf0",
+        "stage": "Draft",
+        "desc": "Turn the comparison into a memo on a Page",
+        "output": "Exported memo"
+      },
+      {
+        "n": 7,
+        "app": "Notebooks",
+        "icon": "nodes",
+        "color": "#077568",
+        "stage": "Organise",
+        "desc": "Keep quotes, policy and memo in one place",
+        "output": "Purchase notebook"
+      },
+      {
+        "n": 8,
+        "app": "Agent Builder",
+        "icon": "spark",
+        "color": "#d9480f",
+        "stage": "Reuse",
+        "desc": "Check any quotation in one prompt",
+        "output": "Quotation Checker"
+      },
+      {
+        "n": 9,
+        "app": "Word + Excel",
+        "icon": "W",
+        "color": "#185abd",
+        "stage": "Extend",
+        "desc": "Refine the memo and check totals in the apps",
+        "output": "Polished memo",
+        "optional": true
+      },
+      {
+        "n": 10,
+        "app": "Capstone",
+        "icon": "check",
+        "color": "#6b4fbb",
+        "stage": "Repeat",
+        "desc": "Run a training purchase end to end",
+        "output": "Full purchase file"
+      }
+    ]
+  }
+}
