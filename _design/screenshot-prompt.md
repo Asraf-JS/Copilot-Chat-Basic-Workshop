@@ -10,7 +10,7 @@ Codex works in a local clone of this repository, drives a real browser with Play
    ```
    git clone https://github.com/Asraf-JS/Copilot-Chat-Basic-Workshop
    cd Copilot-Chat-Basic-Workshop
-   git checkout build/initial-content
+   git checkout main
    ```
 2. Open Codex in that folder.
 3. You need **two training accounts**:
