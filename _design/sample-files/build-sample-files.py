@@ -16,6 +16,7 @@ import zipfile
 from datetime import date
 from pathlib import Path
 
+from reportlab import rl_config
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_RIGHT
 from reportlab.lib.pagesizes import A4
@@ -25,6 +26,7 @@ from reportlab.platypus import (Flowable, KeepTogether, PageBreak, Paragraph, Si
                                 Spacer, Table, TableStyle)
 
 ROOT = Path(__file__).resolve().parents[2]
+rl_config.invariant = 1  # no build timestamps, so a rebuild only changes files whose content changed
 TAX_RATE = 0.08
 FOOTER = ("FICTIONAL TRAINING MATERIAL for the Copilot Chat Basic Workshop. All companies, people, addresses,",
           "phone numbers and registration numbers are made up. The tax rate is for training only.")
@@ -673,8 +675,13 @@ def laptop_key(results):
         "",
         "## Chapter 5 email story",
         "",
-        "The vendor emails in Chapter 5 should keep to these facts: B replies that prices \"may have changed since "
-        "August\" and offers to revalidate; C offers the warranty upgrade; A has not yet been told about the error.",
+        "Emails are in `05-copilot-in-outlook/prompts.md`. B's first email says prices \"may have changed\"; its "
+        "follow-up (a reply in the same thread) says pricing is unchanged, stock is held for 7 days, and a written "
+        "revalidation follows on confirmation. A good thread summary reports the follow-up. The email is not itself a "
+        "revalidation (policy 5.2), so B still needs a revalidated quotation. C offers the 3-year onsite upgrade at "
+        "RM280/unit (as in its quotation) and a 2-year carry-in extension at RM150/unit; the 2-year option does not "
+        "meet policy 6.3. A asks when you will decide and offers an onsite technician; it has not been told about the "
+        "total, which participants raise in 5.6.",
         "",
     ]
     return "\n".join(lines)
@@ -741,7 +748,9 @@ def capstone_key(results):
 def zip_folder(folder, zip_path):
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
         for f in sorted(folder.glob("*.pdf")):
-            z.write(f, f.name)
+            info = zipfile.ZipInfo(f.name, date_time=(2026, 10, 6, 12, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(info, f.read_bytes())
 
 
 def main():
