@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # Copilot Chat Basic Workshop
 
 Participant resources for the one-day **Copilot Chat Basic Workshop**: step-by-step chapter notes with screenshots, ready-to-paste prompts, a printable course book and sample files. The course is for people who use Microsoft Copilot at work without the paid Microsoft 365 Copilot license.
