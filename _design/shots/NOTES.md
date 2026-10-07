@@ -32,3 +32,10 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 03-write-better-prompts, 3.6 settings check: README says Settings > Personalization > Edit; UI shows bottom-left Settings and more > Settings > Personalization > Edit instructions; editor is titled Custom Instructions and Save instructions confirms the instructions are saved.
 
 - 03-write-better-prompts, 3.6 memory check: README says saved memories list, delete and on/off control are available to Basic; UI shows Saved memories contains two existing communication/spelling preferences and a delete icon per memory plus Delete all memories; no memory was added or deleted; the parent Personalization page has a Saved memories switch, currently On; no switch was changed.
+- 04-compare-the-quotations, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst under Pinned; Researcher also appears in Add content; none opened or used.
+
+
+
+- 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
+
+- 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
