@@ -10,15 +10,7 @@
 |------|---------|---------------------------|----------------------|
 | `03-01-gcse-requirements.png` | 3.2 Build the Laptop Requirements Step by Step | Copilot's response to the full GCSE prompt, showing a numbered list of laptop requirements with sources | The full GCSE prompt gives a list you could almost send as it is. |
 | `03-02-rfq-email.png` | 3.3 Improve the Answer | The requirements turned into a polite request-for-quotation email | Three follow-ups turned a list into an email you can send. You didn't retype the requirements once. |
-| `03-03-citations.png` | 3.4 Check the Sources | A source link under Copilot's answer, with the source's name showing | Point at a number to see which page it came from. |
-| `03-04-prompt-gallery.png` | 3.5 Save a Prompt in Prompt Gallery | Prompt Gallery showing the saved prompt Laptop RFQ requirements | Your saved prompts sit alongside Microsoft's examples. |
-| `03-05-custom-instructions.png` | 3.6 Custom Instructions and Memory | The Personalization settings page with custom instructions filled in | Custom instructions apply to new chats. They don't change chats you've already started. |
-| `03-06-memory.png` | 3.6 Custom Instructions and Memory | The memory section in Personalization settings, showing saved memories and the delete option | You can see and delete everything Copilot has remembered about you. |
-
-## Check while you're there
-
-These steps are marked `<!-- VERIFY -->` in the notes. Write what the UI actually shows in `NOTES.md`.
-
-- how Prompt Gallery opens from the message box, whether a sent prompt can be saved from the chat (hover menu "Save prompt") or only from inside Prompt Gallery, and the name of the saved-prompts tab.
-- the path to Settings in the Copilot app, the Personalization page wording, and the custom instructions edit control.
-- memory controls (saved memories list, delete, on/off toggle) are available to Copilot Chat (Basic) users.
+| `03-03-citations.png` | 3.4 Check the Sources | The Sources pane open on the right, listing the pages Copilot used under References | Sources lists every page behind the answer, with the website under each title. |
+| `03-04-prompt-gallery.png` | 3.5 Save a Prompt in Prompt Gallery | Prompt Lab with Your saved prompts selected and the Laptop RFQ requirements prompt at the top | Your saved prompts are listed first. Microsoft's examples are under Prompt topics. |
+| `03-05-custom-instructions.png` | 3.6 Custom Instructions and Memory | The Custom Instructions box in Personalization settings, filled in and saved | The green message confirms they're saved. Custom instructions apply to new chats, not to chats you've already started. |
+| `03-06-memory.png` | 3.6 Custom Instructions and Memory | The Saved memories list in Personalization settings, with Delete all memories at the bottom | You can see and delete everything Copilot has remembered about you. |
