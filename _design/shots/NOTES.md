@@ -39,3 +39,20 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 08-build-a-quotation-checker, 8.1 prebuilt agents check: README says Writing Coach, Prompt Coach and Visual Creator are listed for Basic; UI shows Agent Store lists Prompt Coach and search finds a Writing Coach card; Visual Creator search returns no matching agent; Quotation Checker is not present yet.
+
+
+- 08-build-a-quotation-checker, 8.2 builder check: README says Create agent/New agent opens Describe and Configure tabs; UI shows Agent Store has New agent; the initial Build your own specialist agent screen has a Message Agent Builder box and Skip; Skip opens the form directly instead of Describe/Configure tabs.
+
+- 08-build-a-quotation-checker, 8.4 Knowledge check: README says Knowledge empty and web search disabled; UI shows Knowledge offers Add knowledge and Web search shows Search all; no knowledge was added and web-search settings were left unchanged under the no-setting-change rule.
+
+- 08-build-a-quotation-checker, 8.6 upload check: README says right-hand test pane can accept quotation files; UI shows this Builder has an Agent Builder chat and Configure form without a quotation test pane; the agent will be created first and tested in its own chat.
+
+- 08-build-a-quotation-checker, 8.7 Share check: README says share with specific people or anyone in the organisation after Create; UI shows Create succeeded and the confirmation says the agent is private and available only to you; Share was opened for inspection, with no link copied or sharing submitted.
+
+- 08-build-a-quotation-checker, 8.7 sharing options: README says specific people and organisation access options; UI shows Share Quotation Checker shows Org-wide sharing for chat access, the owner with Can edit, Copy chat link and an alternative copy-edit-link option; no specific-person entry is shown; Cancel closed it; administrator restrictions were not tested.
+
+- 08-build-a-quotation-checker, 8.6 known-error test / 08-05: README says agent finds the Pinnacle arithmetic error and shows printed and corrected totals; UI shows the exact test prompts completed and found Seri Mutiara expiry and Cyberjaya warranty differences, but the Pinnacle check incorrectly claimed 90,975 + 7,278 = 98,523 with no discrepancy; the correct sum is 98,253; 08-05 is skipped because the required error result is absent.
+
+- 08-build-a-quotation-checker, 8.1 / 08-01: README says Writing Coach gives feedback on the pasted memo paragraph; UI shows the prompt contains a paragraph placeholder, while the exact-prompt rule permits only the date replacement; paragraph substitution is awaiting approval, so this shot is skipped.
