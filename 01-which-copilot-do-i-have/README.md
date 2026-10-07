@@ -35,15 +35,15 @@ You need:
 
 Microsoft shows a short label on your account that tells you which Copilot experience you have.
 
-1. Open [m365.cloud.microsoft](https://m365.cloud.microsoft) and sign in with your work account.
-2. Look at the top-right corner. Select your picture or initials to open your account card.
-3. Under your name, find the Copilot label. It reads one of the three labels in the table in section 1.2.
+1. Open the Microsoft 365 Copilot app at [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat) and sign in with your work account.
+2. Look at the bottom of the left pane. Your name is there, with a short Copilot label under it.
+3. The label reads one of the three labels in the table in section 1.2.
 
-<!-- VERIFY: where the label appears (account card under the name, the home page, or the Copilot app) and its exact wording. Public sources confirm "Copilot Chat (Basic)" and "M365 Copilot (Premium)"; confirm "M365 Copilot (Basic)" for organisations under 2,000 seats. -->
+<!-- VERIFY: confirm the exact wording of the Copilot Chat (Basic) label during the manual capture of 01-01. "M365 Copilot (Basic)" was confirmed under the name at the bottom left of the Copilot app. -->
 
-![The Microsoft 365 account card open, showing the Copilot Chat (Basic) label under the account name](./images/01-01-copilot-label.png)
+![The bottom of the Copilot app's left pane, showing the Copilot Chat (Basic) label under the account name](./images/01-01-copilot-label.png)
 
-*The label sits under your name. This account shows Copilot Chat (Basic).*
+*The label sits under your name at the bottom left. This account shows Copilot Chat (Basic).*
 
 4. Write your label down. You'll need it in Chapter 9, which is only for one of the labels.
 
@@ -80,12 +80,10 @@ This course is built for the two **Basic** labels. Everything on the main path w
 The green shield means **enterprise data protection (EDP)** applies to your chat. Your prompts and uploaded files stay inside your organisation's Microsoft 365 boundary, the same as your email and OneDrive, and they aren't used to train the AI models.
 
 1. Open the Microsoft 365 Copilot app: go to [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat). You can also select **Copilot** from the left side of the Microsoft 365 home page.
-2. Look at the top of the chat area for a small green shield.
-3. Point at the shield with your mouse (don't click). A tooltip appears that says enterprise data protection applies to this chat.
+2. Look at the top-right corner of the page for a small green shield.
+3. Point at the shield with your mouse (don't click). A tooltip appears: **Enterprise data protection applies to this chat.**
 
-<!-- VERIFY: the shield's position (top bar next to New chat, or beside the message box) and the tooltip wording. -->
-
-![The Copilot app with the green shield highlighted and its enterprise data protection tooltip showing](./images/01-03-edp-shield.png)
+![The Copilot app with the green shield at the top right and its enterprise data protection tooltip showing](./images/01-03-edp-shield.png)
 
 *Point at the shield to see the tooltip. No shield means no enterprise data protection.*
 
@@ -107,11 +105,11 @@ These features exist, and you'll see them in Microsoft videos and articles. They
 - voice conversations with Copilot
 - priority access at busy times
 
+You may still see **Researcher** and **Analyst** listed under **Pinned** in the left pane. They belong to the paid license and aren't part of this course, so leave them alone.
+
 If a colleague shows you one of these, you're not missing a setting. Your license doesn't include it.
 
-> **If you don't see this:** Your organisation's admin can turn off parts of Copilot Chat, such as file upload, image generation or agents. If a button from this course is missing for you but not for the person next to you, tell your trainer. Standard access can also be slow or temporarily limited at peak times: if a response stalls, wait a minute and select **Regenerate** or send the prompt again.
-
-<!-- VERIFY: "Regenerate" is the current label for retrying a response. -->
+> **If you don't see this:** Your organisation's admin can turn off parts of Copilot Chat, such as file upload, image generation or agents. If a button from this course is missing for you but not for the person next to you, tell your trainer. Standard access can also be slow or temporarily limited at peak times: if a response stalls, wait a minute and send the prompt again.
 
 ---
 
@@ -126,11 +124,11 @@ Time to use it. This prompt asks Copilot about its own protections, using the we
    Explain in plain English what "enterprise data protection" means in Microsoft 365 Copilot Chat. What happens to a file I upload? Answer in 5 short bullet points for an office worker with no IT background.
    ```
 
-3. Read the answer. Look for small numbers or links at the end of sentences. They're the sources Copilot used.
+3. Read the answer. Look for the small grey labels at the end of sentences, such as **microsoft +1**. They name the websites Copilot used. **Sources** under the answer lists them all.
 
-![Copilot's answer about enterprise data protection with numbered source links at the end of sentences](./images/01-04-first-prompt.png)
+![Copilot's answer about enterprise data protection with small source labels at the end of sentences and Sources underneath](./images/01-04-first-prompt.png)
 
-*Each small number links to a web source. You check these properly in Chapter 3.*
+*Each small label shows where a fact came from. You check these properly in Chapter 3.*
 
 ---
 
