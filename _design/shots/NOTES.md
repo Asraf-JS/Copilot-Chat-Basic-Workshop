@@ -39,3 +39,11 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 09-copilot-in-office-apps, account check: README says M365 Copilot (Basic); UI shows M365 Copilot (Basic) is still shown under the account name; Researcher and Analyst remain under Pinned; neither opened or used.
+
+- 09-copilot-in-office-apps, 9.1 / 09-01: README says Home ribbon Copilot button opens a chat pane; UI shows the exported memo opens in Word for the web, but Chat with Copilot and Edit with Copilot controls are hidden and no visible Copilot button or message box is available; chapter stopped at 9.1 and shot skipped.
+
+- 09-copilot-in-office-apps, 9.2 Word actions check / 09-02: README says Basic has a chat pane and may have inline Rewrite or Draft with Copilot; UI shows no visible chat, inline Rewrite or Draft with Copilot action is available in this Word session; the rewrite prompt was not sent and shot skipped.
+
+- 09-copilot-in-office-apps, 9.3 Excel formula check / 09-03: README says Excel suggests a formula, with insertion ability to be checked; UI shows not tested because 9.1 says to stop the chapter when Word Copilot is absent; no workbook was created and shot skipped.
