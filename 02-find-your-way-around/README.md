@@ -43,15 +43,17 @@ Everything in this course runs in the browser, apart from the screenshot tool in
 
 1. Go to [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat). Sign in with your work account if asked.
 2. Find the parts of the screen, using the picture below:
-   - the **left pane**, with **New chat**, your recent chats, and links to **Agents**, **Notebooks** and **Pages**
-   - the **message box** at the bottom of the chat area, where you type
-   - the **green shield** at the top
+   - the **left pane**: **New chat**, **Search**, **Library**, **Agents** and **Notebooks** at the top, then **Pinned** items, then your recent **Chats**
+   - the **message box** in the middle of the page, where you type
+   - the **green shield** at the top right
 
-<!-- VERIFY: left-pane items and their names for a Copilot Chat (Basic) account (Chats/Conversations, Agents, Notebooks, Pages, Create). -->
+![The Microsoft 365 Copilot app with the left pane, the message box and the green shield](./images/02-01-copilot-app.png)
 
-![The Microsoft 365 Copilot app with the left pane, the message box and the green shield labelled](./images/02-01-copilot-app.png)
+*The three areas you use all day: the left pane, the message box and the shield. Your list of chats will be shorter, or empty, on your first day.*
 
-*The three areas you use all day: the left pane, the message box and the shield.*
+> **Note:** You may see **Researcher** and **Analyst** under **Pinned**. They belong to the paid license and aren't used in this course, so leave them alone.
+
+> **Tip:** Your Copilot Pages are kept under **Library**. You'll use them in Chapter 6.
 
 > **Tip:** Pin the tab (right-click the browser tab, then **Pin**) so Copilot is always one click away during the course.
 
@@ -75,12 +77,14 @@ The same Copilot Chat, with the same green shield, is available in other places.
 
 **Teams**
 
-1. Open Teams and select **Chat** on the left.
-2. Select **Copilot** at the top of your chat list.
+1. Open Teams.
+2. Select **Copilot** in the bar of apps on the far left. Copilot opens inside Teams, with the green shield at the top right.
 
-![Teams with Copilot selected at the top of the chat list](./images/02-03-teams-copilot.png)
+<!-- VERIFY: retake 02-03 with a clean Basic account. This capture shows a Work IQ toggle, a Cowork tab and Inbox Triage / People Search suggestions, which belong to the paid license. -->
 
-*Copilot in Teams is the same Copilot Chat. Basic can't search your Teams messages or meetings from here.*
+![Teams with Copilot selected in the bar of apps on the left](./images/02-03-teams-copilot.png)
+
+*Copilot in Teams is the same Copilot Chat, and your chats from the Copilot app show up here too. If you see a **Work IQ** button or a **Cowork** tab, as in this picture, they belong to the paid license and aren't part of this course.*
 
 **Outlook**
 
@@ -95,19 +99,19 @@ Copilot in Outlook has its own buttons for summarising and drafting email. You u
 Everything you ask goes through the message box. Point at each control to see its name.
 
 1. Select **New chat**.
-2. Look at the message box. You'll find:
-   - the **+** button (or a paperclip) to add files and images. You use it in Chapter 4
-   - a way to open **Prompt Gallery**, with ready-made prompts (Chapter 3)
-   - a button to choose how Copilot answers, for example quickly or with deeper thinking
-   - the **Send** arrow on the right
+2. Point at each control to see its name:
+   - **+** (**Add and manage sources**) on the left of the box, to add files and images. You use it in Chapter 4
+   - the **Send** arrow on the right, which appears once you start typing
+   - **Open prompt gallery**, with ready-made prompts (Chapter 3). It sits next to the suggestion buttons under the empty box, and disappears while you type
+   - **Auto**, at the top left of the page, which chooses how Copilot answers. Leave it on **Auto** for this course
 
-<!-- VERIFY: the exact controls and labels in the Basic message box (add content "+", "View prompts"/Prompt Gallery icon, response mode or model picker such as "Auto", Send). Confirm no Work/Web toggle appears for Basic users. -->
+<!-- VERIFY: retake 02-04 with an empty message box so the prompt gallery control shows. -->
 
-![The message box with the add button, the Prompt Gallery button, the response mode button and Send highlighted](./images/02-04-message-box.png)
+![The message box with a prompt typed in, the add button on the left and the Send arrow on the right](./images/02-04-message-box.png)
 
-*Four controls. You use the add button and Prompt Gallery later today.*
+*Type in the box and the Send arrow appears. The Auto setting is at the top left of the page.*
 
-> **Note:** You may see a microphone in the message box. Voice features in Copilot Chat need priority access, so with Basic they may not work, or may be missing.
+> **Note:** You'll see a microphone (**Start dictation**) in the message box. Dictation types what you say into the box. Voice conversations with Copilot need priority access, so they aren't part of this course.
 
 ---
 
@@ -142,7 +146,7 @@ Copilot names each chat for you, usually from your first prompt. A clear name ma
 
 1. In the left pane, find your chat under your recent chats.
 2. Point at it and select the **...** (More options) that appears.
-3. Select **Rename**, type the name below, and press Enter.
+3. Select **Rename** (the menu also has **Move to notebook** and **Delete**), type the name below, and press Enter.
 
    ```text
    Laptop purchase - quotation checklist
@@ -150,12 +154,11 @@ Copilot names each chat for you, usually from your first prompt. A clear name ma
 
 4. Select **New chat**, then select your renamed chat again. Your conversation is still there.
 5. To delete a chat you don't need, use the same **...** menu and select **Delete**. Don't delete this one.
+6. To find an older chat, select **Search** at the top of the left pane and type a word from its name.
 
-<!-- VERIFY: rename and delete options sit under the "..." menu beside a chat in the left pane; check whether there is a chat search box. -->
+![The More options menu beside a chat in the left pane, with Rename, Move to notebook and Delete](./images/02-06-rename-chat.png)
 
-![The More options menu beside a chat in the left pane, with Rename and Delete](./images/02-06-rename-chat.png)
-
-*Rename and Delete live in the More options menu.*
+*Rename, Move to notebook and Delete are in the More options menu beside each chat.*
 
 > **Tip:** Start a new chat for each new task. Mixing two jobs in one chat confuses Copilot, because it tries to use everything earlier in the chat as context.
 
@@ -163,22 +166,24 @@ Copilot names each chat for you, usually from your first prompt. A clear name ma
 
 ## 2.6 Share a Response
 
-You can send a colleague a link to a Copilot response instead of copying and pasting it.
+The quickest way to pass an answer on is to copy it.
 
 1. Under the checklist answer, point at the response to show its buttons.
-2. Select **Share** (or **Copy link**).
-3. Choose who the link works for, if you're asked, then select **Copy link**.
-4. Paste the link into a Teams chat with yourself to test it. Select it to open the shared response.
+2. Select **Copy** (the two-squares icon). The text is copied with its formatting, ready to paste into an email, a Teams chat or a document.
 
-<!-- VERIFY: Share/Copy link button under a response for Basic users, the sharing scope options, and whether the recipient sees the whole chat or one response. -->
+Some organisations can also share a link to a response.
 
-![The Share option under a Copilot response, with Copy link](./images/02-07-share-response.png)
+3. Select **More options** (**...**) under the response. If you see **Share response**, select it.
+4. Read the notice. Anyone in your company with the link can open a copy of the chat, and the copy doesn't change if you carry on chatting.
+5. Select **Copy link** only if you want to share it. For this exercise, select the **X** to close the box instead.
 
-*A shared link opens a read-only copy of the response.*
+![The Share Response box with a preview of the chat and the Copy link button](./images/02-07-share-response.png)
 
-**Copy** (the two-squares icon) copies the text instead, with its formatting, ready to paste into an email or document.
+*Anyone in your company with the link can read a copy of this chat. Check what's in it before you share.*
 
-> **Important:** Only share responses that contain information your colleague is allowed to see. Once a response includes details from an uploaded quotation, treat the link like the quotation itself.
+> **If you don't see this:** **Share response** is an early-access (Frontier) feature, so many organisations don't have it yet. Use **Copy** instead.
+
+> **Important:** Only share responses that contain information your colleague is allowed to see. Once a chat includes details from an uploaded quotation, treat a shared link like the quotation itself.
 
 ---
 
@@ -186,18 +191,18 @@ You can send a colleague a link to a Copilot response instead of copying and pas
 
 On Windows, you can capture part of your screen and add it to a prompt without saving a file first. This is handy when you want Copilot to explain an error message or read a table on a supplier's website.
 
-1. Open the Microsoft 365 Copilot app.
+1. Open the **Microsoft 365 Copilot app on Windows** (installed on your computer, not the browser).
 2. In the message box, select **+** and then the screenshot option.
 3. Drag a box around part of your screen. The picture appears in the message box.
 4. Type a question about it, for example: `What does this message mean, and what should I do next?`
 
-<!-- VERIFY: where the screenshot option sits (inside "+" or its own icon), its exact name, and whether it needs the Copilot desktop app on Windows or also works in the browser. Microsoft announced it as rolling out in 2026. -->
+<!-- VERIFY: capture 02-08 by hand in the Windows desktop app; confirm the option's name and position. In the browser, the + menu has Upload images and files, Attach cloud files and Designer, and no screenshot option. -->
 
 ![The add menu in the message box with the screenshot option highlighted](./images/02-08-screenshot-tool.png)
 
 *Capture, then ask. The screenshot is treated like any other uploaded image.*
 
-> **If you don't see this:** The screenshot tool is still reaching some computers, and it may not appear in the browser or on a Mac. Use the Windows Snipping Tool instead (Windows key + Shift + S), save the picture, and add it with **+** like any other file.
+> **If you don't see this:** The browser version of Copilot doesn't have the screenshot tool, and it's still reaching some Windows computers. Use the Windows Snipping Tool instead (Windows key + Shift + S), save the picture, and add it with **+** like any other file.
 
 ---
 
@@ -214,7 +219,7 @@ Start a new chat and ask Copilot how to tell whether a laptop warranty is "onsit
 | Your old chats are missing | Check you're signed in with the same work account. Chats from another account don't appear |
 | The Copilot icon in Edge opens a personal Copilot | Switch the Edge profile to your work account |
 | Rename isn't in the menu | Open the chat first, then point at its name in the left pane |
-| Share isn't available | Your admin may have turned sharing off. Use **Copy** instead |
+| **Share response** isn't in the menu | It's an early-access feature your organisation may not have. Use **Copy** instead |
 | A prompt stops halfway | Standard access is busy. Wait a moment and send it again |
 
 ---

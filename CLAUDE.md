@@ -57,7 +57,8 @@ Update this section in the same pull request as the work it describes.
 
 - **Done and merged (PRs #1 and #2):** all eleven chapters with notes and prompts, sample files, answer keys, program flow banner, screenshot pipeline and shot lists, book config. The course book PDF is a first build without screenshots.
 - **Capture accounts decided (PR #3):** every chapter is captured with one M365 Copilot (Basic) account; `01-01` and `01-02` are manual captures. If Codex reports Researcher or Analyst in the left pane, update section 1.4 of Chapter 01 to say Basic users may see them listed.
-- **0 of 57 screenshots captured.**
-- **32 `<!-- VERIFY -->` comments** remain across the chapter READMEs. Clear each one when Codex's `NOTES.md` lines confirm or correct it.
+- **6 of 57 screenshots in place**, all Chapter 02 (`02-01`, `02-03` to `02-07`). They were captured with Asraf's own account after its license was removed, so they show leftover paid features and his other chats. Use them for now; **retake all six** with a fresh, clean M365 Copilot (Basic) user. `02-01` caught the greeting mid-animation, `02-03` shows Work IQ and Cowork, and `02-04` needs an empty message box. `02-02` (Edge sidebar) and `02-08` (screenshot tool, Windows desktop app only) need manual capture.
+- **Chapter 02 notes updated to the real UI:** left pane (New chat, Search, Library, Agents, Notebooks, Pinned, Chats), Auto in the top bar, the chat menu (Rename, Move to notebook, Delete), Share response is a Frontier feature so Copy is the main path, and the screenshot tool isn't in the browser.
+- **30 `<!-- VERIFY -->` comments** remain across the chapter READMEs. Clear each one when Codex's `NOTES.md` lines confirm or correct it.
 - **After capture:** update the notes from `NOTES.md`, add red boxes to `_design/shots/annotations.json`, run `cd book && npm run annotate`, and rebuild the book.
 - **Open choice:** British "licence" versus "license". The course uses "license" to match Asraf's brief and the repository description.
