@@ -1,6 +1,6 @@
 # Shot list: 04 - Compare the Quotations
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** The four PDFs from 04-compare-the-quotations/sample-files, uploaded to one new chat. Use 14 October 2026 as today's date in 4.6.
 

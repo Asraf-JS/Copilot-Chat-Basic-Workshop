@@ -1,6 +1,6 @@
 # Shot list: 11 - Extra Practice
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** Copilot app. Writing Coach, Visual Creator and Prompt Coach under Agents.
 

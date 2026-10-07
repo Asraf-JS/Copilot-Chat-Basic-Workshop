@@ -1,6 +1,8 @@
 # Shot list: 01 - Which Copilot Do I Have?
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
+
+**Captured by hand, not by Codex:** `01-01` (the Copilot Chat (Basic) label, from an account in an organisation with more than 2,000 users) and `01-02` (work and consumer Copilot side by side). Codex skips both.
 
 **Set up first:** Signed in at m365.cloud.microsoft. For 01-02 you also need a browser window signed in to consumer Microsoft Copilot with a personal Microsoft account: capture the two side by side, or capture each and Claude combines them. Mask the personal account's name and picture.
 
