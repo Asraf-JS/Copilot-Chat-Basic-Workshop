@@ -1,6 +1,6 @@
 # Shot list: 02 - Find Your Way Around
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** Microsoft Edge signed in to the training account (for 02-02), Teams on the web (02-03), and the Copilot app. 02-08 needs the Copilot app on Windows; if the screenshot tool isn't there, note it and skip.
 

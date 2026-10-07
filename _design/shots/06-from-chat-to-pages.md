@@ -1,6 +1,6 @@
 # Shot list: 06 - From Chat to Pages
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** The 'Laptop purchase - comparison' chat from Chapter 4.
 

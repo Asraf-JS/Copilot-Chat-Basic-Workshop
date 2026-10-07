@@ -13,12 +13,12 @@ Codex works in a local clone of this repository, drives a real browser with Play
    git checkout main
    ```
 2. Open Codex in that folder.
-3. You need **two training accounts**:
-   - **Account 1** shows the **Copilot Chat (Basic)** label. It's used for every chapter except 09.
-   - **Account 2** shows the **M365 Copilot (Basic)** label, with Copilot inside Word and Excel. It's used for Chapter 09 only.
+3. Use **one training account** that shows the **M365 Copilot (Basic)** label: an unlicensed user (no Microsoft 365 Copilot add-on) in Asraf's training tenant. The Copilot app, Outlook, Pages, Notebooks and Agent Builder look the same under both Basic labels, and this label also has Copilot inside Word and Excel for Chapter 09.
 
-   Check the label on each account before you start (see section 1.1 of the notes). A screenshot that shows a different label, or a Premium-only feature such as Researcher, can't be used.
-4. You sign in once, by hand, in the browser window Codex opens. The sign-in is kept in `.copilot-profile/`, which git ignores, so it never reaches GitHub. For Chapter 09, sign out and sign in with Account 2, then switch back afterwards.
+   The **Copilot Chat (Basic)** label only appears in organisations with more than 2,000 users, so `01-01` (that label) and `01-02` (work and consumer Copilot side by side) are captured by hand. Codex skips them.
+
+   If the account shows **M365 Copilot (Premium)**, stop: it has the paid license. Researcher and Analyst may still appear in the left pane of a Basic account. Never open them, and record what's visible in `NOTES.md` so the notes can say what Basic users will see.
+4. You sign in once, by hand, in the browser window Codex opens. The sign-in is kept in `.copilot-profile/`, which git ignores, so it never reaches GitHub.
 
 ## How to run it
 
@@ -26,19 +26,19 @@ Paste the prompt below into Codex, **one chapter per conversation**, changing `C
 
 Each chapter has a shot list in `_design/shots/CHAPTER.md`: the account label it needs, what to set up first, every screenshot with what the screen must show, and the `VERIFY` items to check while you're there.
 
-| Chapter | Shots | Account | Sends or shares |
-|---|---|---|---|
-| 01-which-copilot-do-i-have | 4 | 1 (and a personal account for 01-02) | No |
-| 02-find-your-way-around | 8 | 1 | Copy a share link only |
-| 03-write-better-prompts | 6 | 1 | No |
-| 04-compare-the-quotations | 8 | 1 | No |
-| 05-copilot-in-outlook | 6 | 1 | Four setup emails to the signed-in account only |
-| 06-from-chat-to-pages | 6 | 1 | Share dialog only, then Cancel |
-| 07-copilot-notebooks | 4 | 1 | No |
-| 08-build-a-quotation-checker | 6 | 1 | Share dialog only, then Cancel |
-| 09-copilot-in-office-apps | 3 | 2 | No |
-| 10-capstone | 2 | 1 | No |
-| 11-extra-practice | 4 | 1 | No |
+| Chapter | Shots | Sends or shares |
+|---|---|---|
+| 01-which-copilot-do-i-have | 4 (2 by hand: 01-01, 01-02) | No |
+| 02-find-your-way-around | 8 | Copy a share link only |
+| 03-write-better-prompts | 6 | No |
+| 04-compare-the-quotations | 8 | No |
+| 05-copilot-in-outlook | 6 | Four setup emails to the signed-in account only |
+| 06-from-chat-to-pages | 6 | Share dialog only, then Cancel |
+| 07-copilot-notebooks | 4 | No |
+| 08-build-a-quotation-checker | 6 | Share dialog only, then Cancel |
+| 09-copilot-in-office-apps | 3 | No |
+| 10-capstone | 2 | No |
+| 11-extra-practice | 4 | No |
 
 Check progress any time with `node _design/check-screenshots.mjs`.
 
@@ -56,7 +56,7 @@ Read only these files: CHAPTER/README.md, CHAPTER/prompts.md, _design/shots/CHAP
 Setup:
 - Use Playwright for Node with a persistent, headed context: user data dir ./.copilot-profile, viewport 1600x900, deviceScaleFactor 1. Use Microsoft Edge (channel 'msedge') if it's installed, otherwise Chromium. Install playwright in _design/ if it isn't there.
 - Open https://m365.cloud.microsoft/chat. If it shows a sign-in page, wait (up to 5 minutes) for me to sign in by hand, then continue. Never type a password yourself.
-- Before the first capture, open the account card and check the Copilot label matches the one in _design/shots/CHAPTER.md. If it doesn't, stop and tell me.
+- Before the first capture, open the account card and check the Copilot label reads M365 Copilot (Basic). If it reads M365 Copilot (Premium), stop and tell me.
 
 Capture:
 - Write one script, _design/shots/CHAPTER.mjs, that follows the numbered steps in README.md in order, using the prompts and values from prompts.md. Prefer getByRole / getByLabel / getByText locators. Copilot responses take time: wait for the response to finish (the Stop button disappears) before capturing.
@@ -70,7 +70,7 @@ Rules:
 - Never share a chat, Page or agent with anyone. Open the Share dialog for the screenshot, then Cancel.
 - Never turn on, change or save any admin or organisation setting.
 - If a screen would show real people's names, emails, chats or files other than mine, stop and ask me first.
-- If a screen shows a feature the shot list says Basic doesn't have (Researcher, Analyst, a Work/Web toggle, SharePoint knowledge), stop and tell me: the account may have the wrong license.
+- Researcher and Analyst may be listed in the left pane. Never open or use them, and don't stop because they're visible. Add one NOTES.md line saying which of them appear and where. Stop only if the label reads M365 Copilot (Premium).
 - If a step doesn't match the UI (a renamed button, a missing option), use the closest equivalent and add one line to _design/shots/NOTES.md: chapter, step, what the README says, what the UI shows.
 - Answer every item under "Check while you're there" in the shot list with one line in NOTES.md, even when the README is right.
 
