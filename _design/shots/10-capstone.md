@@ -1,6 +1,6 @@
 # Shot list: 10 - Capstone: The Training Vendor Purchase
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** The three capstone PDFs and the policy from 10-capstone/sample-files, and the Quotation Checker agent from Chapter 8.
 

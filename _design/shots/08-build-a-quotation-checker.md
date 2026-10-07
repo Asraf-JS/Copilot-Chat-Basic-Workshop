@@ -1,6 +1,6 @@
 # Shot list: 08 - Build a Quotation Checker Agent
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** The four PDFs and the memo Page from Chapter 6.
 

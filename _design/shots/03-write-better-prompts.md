@@ -1,6 +1,6 @@
 # Shot list: 03 - Write Better Prompts
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** Copilot app, new chats as the steps say. Settings > Personalization for 03-05 and 03-06.
 

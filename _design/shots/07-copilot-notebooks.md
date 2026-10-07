@@ -1,6 +1,6 @@
 # Shot list: 07 - Keep It Together in a Notebook
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** The four PDFs, the Page from Chapter 6 and the exported Word memo.
 

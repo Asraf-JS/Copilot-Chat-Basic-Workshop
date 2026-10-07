@@ -46,7 +46,8 @@ Ten stages, one per chapter: Check, Explore, Ask, Compare, Chase, Draft, Organis
 
 - 57 screenshots are referenced in the READMEs; the per-chapter lists are in `_design/shots/<chapter>.md`, generated from the README image lines. Regenerate them if you add or rename an image.
 - Codex captures on Asraf's Windows machine with `_design/screenshot-prompt.md` and the browser profile `.copilot-profile/`. It works on a `shots/<chapter>` branch and never pushes to `main`.
-- `01-02` (work and consumer Copilot side by side) needs a personal Microsoft account and is captured by hand.
+- Capture account: one unlicensed user in Asraf's training tenant, showing **M365 Copilot (Basic)**, for every chapter. The Copilot Chat (Basic) label only exists in organisations over 2,000 users, so `01-01` (that label) and `01-02` (work and consumer Copilot side by side) are captured by hand.
+- Researcher and Analyst may be listed in a Basic account's left pane. Codex never opens them and records what's visible in `NOTES.md`. Stop only if the label reads M365 Copilot (Premium).
 
 ---
 
@@ -55,7 +56,7 @@ Ten stages, one per chapter: Check, Explore, Ask, Compare, Chase, Draft, Organis
 Update this section in the same pull request as the work it describes.
 
 - **Done and merged (PRs #1 and #2):** all eleven chapters with notes and prompts, sample files, answer keys, program flow banner, screenshot pipeline and shot lists, book config. The course book PDF is a first build without screenshots.
-- **Blocked: capture accounts.** The first Codex run stopped because the saved profile signs in with an **M365 Copilot (Premium)** account (Researcher and Analyst visible), which can't be used. A small tenant's unlicensed user shows **M365 Copilot (Basic)**, not Copilot Chat (Basic), because that label depends on organisation size. Asraf is sorting out which accounts to use. When he decides, update the label rules in `_design/screenshot-prompt.md` and the shot lists to match.
+- **Capture accounts decided (PR #3):** every chapter is captured with one M365 Copilot (Basic) account; `01-01` and `01-02` are manual captures. If Codex reports Researcher or Analyst in the left pane, update section 1.4 of Chapter 01 to say Basic users may see them listed.
 - **0 of 57 screenshots captured.**
 - **32 `<!-- VERIFY -->` comments** remain across the chapter READMEs. Clear each one when Codex's `NOTES.md` lines confirm or correct it.
 - **After capture:** update the notes from `NOTES.md`, add red boxes to `_design/shots/annotations.json`, run `cd book && npm run annotate`, and rebuild the book.

@@ -1,6 +1,6 @@
 # Shot list: 05 - Chase Vendors with Copilot in Outlook
 
-**Account label:** must show **Copilot Chat (Basic)**.
+**Account label:** must show **M365 Copilot (Basic)**.
 
 **Set up first:** Outlook on the web. Send the four emails in prompts.md Part 1 to the training account first (Email 4 as a reply to Email 1).
 
