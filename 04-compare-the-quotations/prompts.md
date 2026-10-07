@@ -11,7 +11,7 @@ Compare the three laptop quotations against the procurement policy. Upload all f
 **Session:** new chat, with all four files uploaded | **Grounding:** uploaded files
 
 ```
-I've uploaded three laptop quotations and an extract from our procurement policy. For each quotation, give me the vendor name, quotation number, date, validity, grand total, warranty and delivery lead time. Then tell me in one sentence what the policy extract covers.
+I've uploaded three laptop quotations and an extract from our procurement policy. For each quotation, give me the vendor name, quotation number, date, validity, grand total, warranty and delivery lead time. Then tell me in one sentence what the policy extract covers. Use four short bullets: one per vendor and one for the policy.
 ```
 
 If a file is missing from the answer:
@@ -20,10 +20,10 @@ If a file is missing from the answer:
 You missed one of the quotations. Please read all three and include it.
 ```
 
-If you had to upload the files in two batches:
+If you had to upload the policy separately:
 
 ```
-I've added two more files. Include them too.
+I've added our procurement policy. Include it too.
 ```
 
 ---

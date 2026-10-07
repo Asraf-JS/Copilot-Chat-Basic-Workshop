@@ -118,17 +118,18 @@ You don't need to start again when an answer is nearly right. Tell Copilot what 
 Copilot uses the web to answer, and it shows where its facts came from. A source can be out of date, from a seller, or about another country. Checking takes a minute.
 
 1. Go back to the answer from step 4 in section 3.2.
-2. Find the small grey labels at the end of sentences, such as **microsoft +1**. Point at one to see which pages it stands for, or select **Sources** under the answer to see the full list.
-3. Select a source to open it in a new tab. Check:
+2. Find the small grey labels at the end of sentences, such as **microsoft +1**. They show which website each fact came from.
+3. Select **Sources** under the answer. A **Sources** pane opens on the right, with the pages Copilot used listed under **References**.
+4. Select a source to open it in a new tab. Check:
    - **Who wrote it?** A manufacturer selling laptops has a reason to recommend more expensive models.
    - **When?** Laptop advice from three years ago is already out of date.
    - **Does it say what Copilot said?** Find the sentence on the page that supports Copilot's claim.
 
-![A source link under Copilot's answer, with the source's name showing](./images/03-03-citations.png)
+![The Sources pane open on the right, listing the pages Copilot used under References](./images/03-03-citations.png)
 
-*Point at a number to see which page it came from.*
+*Sources lists every page behind the answer, with the website under each title.*
 
-4. If you find a claim with no source, or a source that doesn't support it, ask:
+5. If you find a claim with no source, or a source that doesn't support it, ask:
 
    ```
    Which of the requirements in your list are not supported by one of your sources? Mark them clearly.
@@ -142,17 +143,15 @@ Copilot uses the web to answer, and it shows where its facts came from. A source
 
 Prompt Gallery holds ready-made prompts from Microsoft and prompts you save yourself. Save the full GCSE prompt so you can reuse it for the next purchase.
 
-1. Open Prompt Gallery from the message box (the prompts button you found in 2.3).
-2. Browse a few of Microsoft's prompts. Select one to see how it's written.
-3. Go back to your chat. Point at your full GCSE prompt from step 4 in 3.2 and look for the option to save it.
-4. Give it a title, for example `Laptop RFQ requirements`, and save it.
-5. Open Prompt Gallery again and find your prompt under your saved prompts.
+1. In your chat, point at your full GCSE prompt from step 4 in 3.2. Buttons appear beside it.
+2. Select **Save prompt**, give it a title such as `Laptop RFQ requirements`, and save it.
+3. Select **New chat**, then **Open prompt gallery** (beside the suggestion buttons under the empty message box). The gallery opens as **Prompt Lab**.
+4. Select **Your saved prompts**. Your prompt is listed there.
+5. Open **Prompt topics** to browse Microsoft's ready-made prompts. Select one to see how it's written.
 
-<!-- VERIFY: how Prompt Gallery opens from the message box, whether a sent prompt can be saved from the chat (hover menu "Save prompt") or only from inside Prompt Gallery, and the name of the saved-prompts tab. -->
+![Prompt Lab with Your saved prompts selected and the Laptop RFQ requirements prompt at the top](./images/03-04-prompt-gallery.png)
 
-![Prompt Gallery showing the saved prompt Laptop RFQ requirements](./images/03-04-prompt-gallery.png)
-
-*Your saved prompts sit alongside Microsoft's examples.*
+*Your saved prompts are listed first. Microsoft's examples are under Prompt topics.*
 
 > **If you don't see this:** If there's no save option beside your prompt, copy the prompt into a note instead (OneNote or a Word document). Prompt Gallery may look different in your organisation, or saving may still be rolling out.
 
@@ -164,20 +163,18 @@ You've typed "I work in Admin and Facilities at a Malaysian company" several tim
 
 **Set custom instructions**
 
-1. Open **Settings**: select the **...** or your profile picture in the Copilot app, then **Settings**.
+1. At the bottom of the left pane, select **Settings and more** (the gear), then **Settings**.
 2. Select **Personalization**.
-3. Find custom instructions and select **Edit**.
-4. Paste the text below, change it to fit you, and save.
+3. Under custom instructions, select **Edit instructions**.
+4. Paste the text below into the box, change it to fit you, and select **Save instructions**.
 
    ```
    I work in the Admin and Facilities department of a Malaysian company. Use British spelling and Malaysian Ringgit (RM). Keep answers short and practical, use tables for comparisons, and tell me when you're unsure of a fact.
    ```
 
-<!-- VERIFY: the path to Settings in the Copilot app, the Personalization page wording, and the custom instructions edit control. -->
+![The Custom Instructions box in Personalization settings, filled in and saved](./images/03-05-custom-instructions.png)
 
-![The Personalization settings page with custom instructions filled in](./images/03-05-custom-instructions.png)
-
-*Custom instructions apply to new chats. They don't change chats you've already started.*
+*The green message confirms they're saved. Custom instructions apply to new chats, not to chats you've already started.*
 
 5. Select **New chat** and send `What spelling and currency will you use when you answer me?` to test it.
 
@@ -185,13 +182,11 @@ You've typed "I work in Admin and Facilities at a Malaysian company" several tim
 
 Copilot can also remember facts from your chats, such as your role or preferences, and use them later. It usually asks before it saves a memory.
 
-1. Go back to **Settings** > **Personalization** and find the memory section.
-2. Look at what Copilot has saved, if anything. You can delete a single memory or all of them.
-3. Check that memory is on or off, whichever your trainer asks.
+1. Go back to **Settings** > **Personalization**. The **Saved memories** switch turns memory on or off. Leave it as your trainer asks.
+2. Open **Saved memories** to see what Copilot has remembered, if anything.
+3. Point at a memory to delete just that one, or select **Delete all memories** at the bottom.
 
-<!-- VERIFY: memory controls (saved memories list, delete, on/off toggle) are available to Copilot Chat (Basic) users. -->
-
-![The memory section in Personalization settings, showing saved memories and the delete option](./images/03-06-memory.png)
+![The Saved memories list in Personalization settings, with Delete all memories at the bottom](./images/03-06-memory.png)
 
 *You can see and delete everything Copilot has remembered about you.*
 

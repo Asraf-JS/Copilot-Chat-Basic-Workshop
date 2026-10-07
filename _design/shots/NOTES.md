@@ -22,3 +22,20 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 01-which-copilot-do-i-have, 1.4 check: README calls retrying a response Regenerate; no Regenerate or replacement retry control appears in the completed response toolbar or its More options menu, which contains Share response (Frontier), Edit in Pages, Export to and Read aloud. No retry action was used.
 - 01-which-copilot-do-i-have, 1.5 / 01-04: README description and caption show small numbered source links; UI shows inline microsoft and +1 source chips at sentence ends. Captured this citation-style equivalent with explicit user approval.
 - 02-find-your-way-around, rerun check: six screenshots recaptured using the existing chat, visually checked at 1600x900 with avatar masks and identical raw copies. Added a wait for the Send control to finish rendering. Checker remains 6/8; 02-02 needs a manual Edge-sidebar capture and 02-08 needs a manual desktop screenshot-tool capture.
+
+- 03-write-better-prompts, account/navigation: README says M365 Copilot (Basic); UI shows M365 Copilot (Basic); Researcher and Analyst under Pinned; neither opened or used.
+
+- 03-write-better-prompts, 3.4: README says hover over a number to see the source name; UI shows source chips show publisher labels; Sources opens a Citations pane with Microsoft source titles instead of a numbered-hover preview.
+
+- 03-write-better-prompts, 3.5 check: README says Prompt Gallery opens from the message box and has a saved-prompts tab; UI shows Open prompt gallery is below the empty new-chat box and opens Prompt Lab; hover on a sent prompt exposes Save prompt; saved prompts are under Your saved prompts; Laptop RFQ requirements is present.
+
+- 03-write-better-prompts, 3.6 settings check: README says Settings > Personalization > Edit; UI shows bottom-left Settings and more > Settings > Personalization > Edit instructions; editor is titled Custom Instructions and Save instructions confirms the instructions are saved.
+
+- 03-write-better-prompts, 3.6 memory check: README says saved memories list, delete and on/off control are available to Basic; UI shows Saved memories contains two existing communication/spelling preferences and a delete icon per memory plus Delete all memories; no memory was added or deleted; the parent Personalization page has a Saved memories switch, currently On; no switch was changed.
+- 04-compare-the-quotations, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst under Pinned; Researcher also appears in Add content; none opened or used.
+
+
+
+- 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
+
+- 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.

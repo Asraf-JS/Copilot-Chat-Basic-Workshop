@@ -64,7 +64,7 @@ Before you start, look at the brief again and note the four things every quotati
 
 **Goal:** A checked, like-for-like comparison of the three quotations.
 
-**Hint:** Start with your **Quotation Checker** agent. Open it from **Agents**, upload all three quotations, use the **Compare quotations** starter prompt, and give it today's date. Then start a new Copilot Chat, upload the three quotations and the policy, and build the comparison table. Check every total with your calculator.
+**Hint:** Start with your **Quotation Checker** agent. Open it from **Agents**, upload all three quotations, use the **Compare quotations** starter prompt, and give it today's date. Then start a new Copilot Chat, upload the three quotations and then the policy (Copilot takes up to three files at a time), and build the comparison table. Check every total with your calculator.
 
 ![The Quotation Checker agent's results for the three training quotations](./images/10-01-agent-check.png)
 

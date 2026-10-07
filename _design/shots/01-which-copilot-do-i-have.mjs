@@ -20,7 +20,7 @@ try {
  await page.setViewportSize({width:1600,height:900});
  if(!page.url().includes("m365.cloud.microsoft/chat"))await page.goto("https://m365.cloud.microsoft/chat",{waitUntil:"domcontentloaded",timeout:60000});
  await page.waitForTimeout(2000);
- if(page.url().includes("login.microsoftonline.com")&&await page.getByText("asraf@jsasraf.onmicrosoft.com",{exact:true}).count())await page.getByText("asraf@jsasraf.onmicrosoft.com",{exact:true}).click();
+ if(page.url().includes("login.microsoftonline.com")&&await page.getByText((process.env.CAPTURE_ACCOUNT||"(no CAPTURE_ACCOUNT set)"),{exact:true}).count())await page.getByText((process.env.CAPTURE_ACCOUNT||"(no CAPTURE_ACCOUNT set)"),{exact:true}).click();
  if(page.url().includes("login.microsoftonline.com")){await page.waitForTimeout(3000);if(page.url().includes("login.microsoftonline.com"))throw Error("Manual sign-in required; close headless Edge before visible sign-in.");}
  await page.getByText(/^M365 Copilot \((?:Basic|Premium)\)\s*$/).first().waitFor({timeout:60000});
  await page.keyboard.press("Escape");
