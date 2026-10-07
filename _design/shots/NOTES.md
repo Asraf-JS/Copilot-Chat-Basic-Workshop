@@ -39,3 +39,15 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 10-capstone, 10.4 checked figures: README says verify every total and the one problem in each quotation; UI shows source PDFs confirm Ilmu RM37,260 with HRD Corp status missing; Pena printed RM2,192.40 conflicts with RM980 per participant, giving an unconfirmed RM32,886 for 30 including materials and tax; Bestari RM19,116 covers only one day.
+
+- 10-capstone, 10.6 memo review: README says memo follows every Section 7 heading with recommendation before evidence; UI shows the generated memo used six different headings and omitted budget confirmation and approval requirements; it was reorganised by hand into the seven policy items, with checked figures, mandatory HRD Corp status and all unresolved conditions; memo precedes the comparison.
+
+- 10-capstone, 10.7 Page reference: README says add the memo Page to Training purchase 2026; UI shows the four training PDFs were added, but the new memo Page was not returned by exact-name search yet.
+
+- 10-capstone, 10.5 email drafts: README says draft three chasing emails from checked findings; UI shows the Outlook compose Draft with Copilot control is unavailable and the prompt requires non-date placeholder substitutions awaiting approval; no capstone email drafts were created or sent.
+
+- 10-capstone, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
+- 10-capstone, 10.7 Notebook answer: README says Notebook lists every pending item with policy citations; UI shows the exact outstanding-items prompt considered only Pena and Bestari and treated their printed totals as approval values; its answer omitted Ilmu and the unconfirmed Pena recalculation, so it did not pass the checkpoint.
