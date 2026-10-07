@@ -36,6 +36,8 @@ You need:
 | `quotation-cyberjaya-digital.pdf` | Vendor C, Cyberjaya Digital Supplies Sdn Bhd, Cyberjaya |
 | `procurement-policy.pdf` | A two-page extract from Teratai Holdings' procurement policy |
 
+> **Note:** Some screenshots in this chapter are blurred where they would give away the answers. Finding the problems yourself is the point of the lab.
+
 > **Note:** Every company, person and number in these files is fictional. The tax rate is for training only. Never practise with real supplier quotations: they can contain prices and terms your company has agreed to keep confidential.
 
 ---
