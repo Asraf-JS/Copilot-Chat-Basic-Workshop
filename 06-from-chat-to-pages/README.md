@@ -71,9 +71,7 @@ Try it.
    ```
 
 2. Check the answer against your Chapter 4 findings. Fix anything wrong now, with one more prompt, before you move it.
-3. Under the response, select **Edit in Pages**. The Page opens next to the chat with the response copied into it.
-
-<!-- VERIFY: the label under a response that creates a Page ("Edit in Pages", "Open in Pages" or the Pages icon) for Copilot Chat (Basic) users. -->
+3. Under the response, select **More options** (**...**), then **Edit in Pages**. The Page opens next to the chat with the response copied into it.
 
 ![A Copilot response with the Edit in Pages option, and the new Page open beside the chat](./images/06-02-edit-in-pages.png)
 
@@ -85,7 +83,7 @@ Try it.
    Laptop purchase - comparison and memo
    ```
 
-> **If you don't see this:** If there's no **Edit in Pages** option, select **Copy** under the response, open **Pages** from the left pane of the Copilot app, create a new Page, and paste. If Pages is missing from the left pane altogether, your organisation may have turned it off, or your account may not have OneDrive storage. Tell your trainer, and use a Word document instead for the rest of this chapter.
+> **If you don't see this:** If there's no **Edit in Pages** option, select **Copy** under the response, open **Library** in the left pane of the Copilot app, create a new Page, and paste. If you can't create a Page at all, your organisation may have turned it off, or your account may not have OneDrive storage. Tell your trainer, and use a Word document instead for the rest of this chapter.
 
 ---
 
@@ -123,7 +121,7 @@ Section 7 of the policy lists what the memo must include. Ask Copilot to follow 
    ```
 
 2. Read the memo. Check that every item in Section 7 has a heading, and that the total is the right one for the recommended vendor.
-3. Select **Edit in Pages** under the memo and choose to add it to your existing Page, **Laptop purchase - comparison and memo**. Move it above the comparison if it lands below.
+3. Under the memo, select **More options** (**...**) > **Edit in Pages** and choose to add it to your existing Page, **Laptop purchase - comparison and memo**. Move it above the comparison if it lands below.
 
 <!-- VERIFY: whether "Edit in Pages" can add a second response to an existing Page, or only create a new one. If only new, copy the memo and paste it into the existing Page. -->
 

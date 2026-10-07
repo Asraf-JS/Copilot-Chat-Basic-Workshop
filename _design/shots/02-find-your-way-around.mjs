@@ -36,15 +36,22 @@ async function teamsShot(){
 }
 try {
  if(!page.url().includes("m365.cloud.microsoft/chat"))await page.goto("https://m365.cloud.microsoft/chat",{waitUntil:"domcontentloaded",timeout:60000});
- await page.waitForTimeout(1500);
+ await page.waitForTimeout(2000);
+ if(page.url().includes("login.microsoftonline.com") && await page.getByText("asraf@jsasraf.onmicrosoft.com",{exact:true}).count()){
+ await page.getByText("asraf@jsasraf.onmicrosoft.com",{exact:true}).click();await page.waitForTimeout(3000);
+ }
  if(page.url().includes("login.microsoftonline.com"))throw Error("Manual sign-in required; close headless Edge before signing in visibly with the same profile.");
+ await page.getByText(/^M365 Copilot \((?:Basic|Premium)\)\s*$/).first().waitFor({timeout:60000});
  let text=await page.locator("body").innerText();if(text.includes("M365 Copilot (Premium)"))throw Error("STOP: Premium account");
  if(!text.includes("M365 Copilot (Basic)"))throw Error("Expected M365 Copilot (Basic) label");
  await page.keyboard.press("Escape");
  await page.getByRole("button",{name:/Work account/i}).click();await page.waitForTimeout(500);
  if((await page.locator("body").innerText()).includes("M365 Copilot (Premium)"))throw Error("STOP: Premium account card");
  await page.keyboard.press("Escape");
- if(process.argv.includes("--teams-only")){
+ if(process.argv.includes("--message-only")){
+ await page.getByText("New chat",{exact:true}).first().click();await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill(prompt);
+ await page.getByRole("button",{name:"Send",exact:true}).waitFor();await page.waitForTimeout(2000);await shot("02-04-message-box.png");await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill("");
+ }else if(process.argv.includes("--teams-only")){
  await teamsShot();
  }else if(process.argv.includes("--share-only")){
  await page.getByRole("button",{name:"More options",exact:true}).first().scrollIntoViewIfNeeded();await page.getByRole("button",{name:"More options",exact:true}).first().click();await page.getByRole("menuitem",{name:"Share response (Frontier)",exact:true}).click();await page.waitForTimeout(2500);await shot("02-07-share-response.png");await page.getByRole("dialog").getByRole("button",{name:"Close",exact:true}).click();
@@ -53,7 +60,7 @@ try {
  await page.getByText("New chat",{exact:true}).first().click();await page.waitForTimeout(1000);await shot("02-01-copilot-app.png");
  await teamsShot();
  // 2.3: one message-box screenshot, before sending.
- await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill(prompt);await shot("02-04-message-box.png");await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill("");
+ await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill(prompt);await page.getByRole("button",{name:"Send",exact:true}).waitFor();await page.waitForTimeout(2000);await shot("02-04-message-box.png");await page.getByRole("textbox",{name:"Message Copilot",exact:true}).fill("");
  // 2.4: reuse the workshop chat if it exists, never duplicate it.
  let row=page.locator("div.fui-SplitNavItem").filter({has:page.getByText(chatName,{exact:true})});
  let old=page.locator("div.fui-SplitNavItem").filter({has:page.getByText("Laptop Quotation Review Checklist",{exact:true})});

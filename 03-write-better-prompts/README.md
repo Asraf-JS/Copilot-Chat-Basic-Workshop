@@ -118,7 +118,7 @@ You don't need to start again when an answer is nearly right. Tell Copilot what 
 Copilot uses the web to answer, and it shows where its facts came from. A source can be out of date, from a seller, or about another country. Checking takes a minute.
 
 1. Go back to the answer from step 4 in section 3.2.
-2. Find the small numbers (or links) at the end of sentences. Point at one to see the source name.
+2. Find the small grey labels at the end of sentences, such as **microsoft +1**. Point at one to see which pages it stands for, or select **Sources** under the answer to see the full list.
 3. Select a source to open it in a new tab. Check:
    - **Who wrote it?** A manufacturer selling laptops has a reason to recommend more expensive models.
    - **When?** Laptop advice from three years ago is already out of date.
