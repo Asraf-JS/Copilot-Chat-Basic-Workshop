@@ -39,3 +39,23 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 06-from-chat-to-pages, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
+- 06-from-chat-to-pages, 6.1 / 06-01: README says warranty adjustment disappears after three changes; UI shows the warranty adjustment survived, but the recalculated Pinnacle total disappeared and the adjusted row reverted to its incorrect printed RM98,523.00; the complete-comparison prompt restored a separate RM98,253.00 recalculation.
+
+- 06-from-chat-to-pages, 6.2 control check: README says More options > Edit in Pages creates a Page; UI shows More options > Edit in Pages opens a Page beside the chat and automatically attaches it to the chat box.
+
+- 06-from-chat-to-pages, 6.3 editing check: README says Copilot box on the Page edits the Page directly; UI shows the chat box remains at the bottom left with the Page attached; the Status prompt offered a row in chat without applying it, so the row was inserted by hand in the Page table.
+
+- 06-from-chat-to-pages, 6.4 add-response check: README says Edit in Pages can add the memo to the existing Page; UI shows with a Page open, More options changes to Add to page and appends the second response to that Page.
+
+- 06-from-chat-to-pages, 6.5 Share check / 06-05: README says Share dialog with specific people and edit/view permissions; UI shows Share opens only Copy link and Copy component; no recipient or edit/view dialog is offered from this Page; the menu was closed without copying or sharing.
+
+- 06-from-chat-to-pages, 6.6 export check: README says Convert/Export to Word and File > Export > Download as PDF; UI shows Page More actions > Export offers Document and PDF directly; Document export was selected; the menu capture shows these labels.
+
+- 06-from-chat-to-pages, 6.4 manual editing: README says memo headings and comparison formatting are retained; UI shows the memo was placed above the comparison and fictional placeholders replaced; clipboard transfer flattened the memo headings and small tables, so formatting still needs manual tidying in the exported document.
+
+- 06-from-chat-to-pages, 6.6 Word PDF path: README says File > Export > Download as PDF; UI shows the exported document opens in Word for the web; File > Export offers Download as PDF, Download as PDF with comments and Download as ODT.
+
+- 06-from-chat-to-pages, 6.6 export result: README says Page, Word document and PDF contain the memo; UI shows Word document was created and opened; its PDF download was saved locally in the repository profile folder; the memo is above the comparison.
