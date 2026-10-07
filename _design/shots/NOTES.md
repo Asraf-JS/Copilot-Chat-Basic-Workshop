@@ -39,3 +39,15 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 11-extra-practice, A: README says Writing Coach improves the announcement; UI shows Writing Coach is listed but Add reports no permission and asks for the IT admin; the README normal-chat fallback provides the revision and explanations.
+
+- 11-extra-practice, agents check: README says Writing Coach, Prompt Coach and Visual Creator appear under Agents; UI shows Writing Coach is discoverable but blocked by admin permissions, Prompt Coach is available and usable, and no Visual Creator search result or replacement name was found; normal Copilot Chat generated the notice image.
+
+- 11-extra-practice, C.4: README says run the improved prompt in a new chat; UI shows the improved response is captured; its new wording was not submitted because the run permits only prompts.md prompts.
+
+- 11-extra-practice, D.3: README says check the publisher, date and claims in two sources; UI shows NIST SP 800-88 Rev. 2 was published September 2025 and supports sanitisation; the DOE homepage identifies DOE and collection/recovery facilities but has no publication date and does not alone verify SW110; it also contains unrelated promotional text.
+
+- 11-extra-practice, A result: README says the announcement has the collection date and keeps all facts; UI shows the supplied draft only says the stated date; the revision uses scheduled date and adds security and allocation wording absent from the draft.
+
+- 11-extra-practice, B: README says Visual Creator generates a notice image; UI shows normal Copilot Chat generated a blue and white laptop notice image with the same prompt; the image was not posted.
