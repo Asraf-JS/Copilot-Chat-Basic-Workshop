@@ -1,0 +1,7 @@
+import {resolve} from 'node:path';import {attach,capture,note,root,stable} from './run-helpers.mjs';
+const {browser,page}=await attach();const ch='04-compare-the-quotations';
+try{await page.getByText('New chat',{exact:true}).first().click();await stable(page);
+for(const names of [['quotation-pinnacle-komputer.pdf','quotation-seri-mutiara.pdf','quotation-cyberjaya-digital.pdf'],['procurement-policy.pdf']]){await page.getByRole('button',{name:'Add and manage sources',exact:true}).click();const chooser=page.waitForEvent('filechooser');await page.getByText('Upload images and files',{exact:true}).click();await(await chooser).setFiles(names.map(n=>resolve(root,ch,'sample-files',n)));await page.waitForTimeout(10000);await page.getByRole('progressbar').waitFor({state:'hidden'}).catch(()=>{});}
+console.log('FILES',await page.getByRole('button').evaluateAll(es=>es.map(e=>e.getAttribute('aria-label')).filter(x=>x&&/pdf|Remove|Delete/i.test(x))));console.log('ALERT',await page.getByRole('alert').allTextContents());await capture(page,ch,'04-02-files-uploaded.png');console.log('TEMP_URL',page.url());while(await page.getByRole('button',{name:/Remove attachment/}).count())await page.getByRole('button',{name:/Remove attachment/}).first().click();await page.getByText('New chat',{exact:true}).first().click();
+}catch(e){console.log('ERROR',e.message.split('\n')[0]);}finally{await browser.close();}
+

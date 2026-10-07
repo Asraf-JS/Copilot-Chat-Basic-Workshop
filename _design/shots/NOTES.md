@@ -39,3 +39,6 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 04-compare-the-quotations, 4.2 / 04-02 retake: README says three quotations and the policy attached to the same message; UI shows three quotation PDFs attached and finished uploading; adding procurement-policy.pdf in a second upload did not add a fourth attachment; captured the three-file fallback before any prompt, then removed its attachments and cleared the unsent temporary chat; no saved conversation was created.
+
