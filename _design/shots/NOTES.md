@@ -125,3 +125,5 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 11-extra-practice, A result: README says the announcement has the collection date and keeps all facts; UI shows the supplied draft only says the stated date; the revision uses scheduled date and adds security and allocation wording absent from the draft.
 
 - 11-extra-practice, B: README says Visual Creator generates a notice image; UI shows normal Copilot Chat generated a blue and white laptop notice image with the same prompt; the image was not posted.
+
+- 04-compare-the-quotations, 4.2 / 04-02 retake2: README says send the policy first, then attach three quotations before sending the next prompt; UI shows the policy was uploaded and acknowledged in its own message; the three quotation PDFs finished uploading in the next empty message box, and no quotation prompt was sent.
