@@ -74,8 +74,6 @@ Microsoft includes some ready-made agents. Try two before you build your own.
 2. Agent Builder opens with **Build your own specialist agent** and a box to describe your agent in a chat. Select **Skip**: you'll fill in each field yourself, so you know exactly what the agent has been told.
 3. The form opens, with name, description and instructions at the top. If a **What's new in Agent Builder** box appears, select **Got it**.
 
-<!-- VERIFY: retake 08-02 without the What's new in Agent Builder box covering the form. -->
-
 ![Agent Builder's form, with the agent name, description and instructions fields](./images/08-02-agent-builder.png)
 
 *The form shows every setting on one page: name, description, instructions, knowledge and suggested prompts.*
@@ -177,13 +175,9 @@ Agents miss things too. When we built this agent, it caught the expired quotatio
 
 8. Select **Update**, start a new chat with the agent, and test the Pinnacle quotation again.
 
-<!-- VERIFY: retake 08-05 after adding the extra line, showing the agent catching the Pinnacle total. -->
-
-<!-- Screenshot still to capture: 08-05-test-agent.png. Remove this comment wrapper when the image is added.
 ![The agent's check of the Pinnacle Komputer quotation, with the printed and correct grand totals side by side](./images/08-05-test-agent.png)
 
 *After one extra line in its instructions, the agent catches the error you found by hand in Chapter 4.*
--->
 
 > **If you don't see this:** If an upload fails at a busy time, wait a minute and try again. If the agent still misses the error after the extra line, that's worth knowing too: keep checking totals yourself, whatever the agent says.
 
