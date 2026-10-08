@@ -40,7 +40,7 @@ Ten stages, one per chapter: Check, Explore, Ask, Compare, Chase, Draft, Organis
 - Laptop purchase (Chapter 4, `04-compare-the-quotations/sample-files/`): Pinnacle Komputer (A, grand total digits transposed), Seri Mutiara Technology (B, expired), Cyberjaya Digital Supplies (C, 1-year warranty, not like-for-like), plus `procurement-policy.pdf`. The policy's Sections 5 to 7 are written so each seeded problem maps to a clause.
 - Capstone (Chapter 10, `10-capstone/sample-files/`): Ilmu Cemerlang (no HRD Corp status), Pena Mahir (per-pax price charged per group), Bestari Skills (one day against a two-day brief).
 - Answer keys go to `_trainer/`, which git ignores. They never go in the public repository. After changing a figure, regenerate and send Asraf the updated key, because the container is temporary.
-- Chapter READMEs must not reveal the seeded problems before the chapter that finds them.
+- Chapter READMEs must not reveal the seeded problems before the chapter that finds them. Inside that chapter, the expected results sit in collapsible **What should you see?** boxes (Asraf's decision: full answers, capstone included, one click away). Their figures come from the answer keys: if a figure changes, regenerate the keys and update the boxes in Chapters 04 to 10 in the same pull request. The answer key files themselves stay in `_trainer/`.
 
 ---
 
@@ -70,5 +70,6 @@ Update this section in the same pull request as the work it describes.
 - **Chapter 02 notes updated to the real UI:** left pane (New chat, Search, Library, Agents, Notebooks, Pinned, Chats), Auto in the top bar, the chat menu (Rename, Move to notebook, Delete), Share response is a Frontier feature so Copy is the main path, and the screenshot tool isn't in the browser.
 - **9 `<!-- VERIFY -->` comments** remain across the chapter READMEs. Clear each one when Codex's `NOTES.md` lines confirm or correct it.
 - **Trainer deck added:** `Copilot-Chat-Basic-Workshop-Deck.pptx` (50 slides, one deck for the whole day, navy and teal to match Asraf's other decks): welcome, scenario, plan and ground rules, then per chapter a divider, teaching slides and a "Your turn" slide, with speaker notes on every slide. It never shows the seeded problems or answers (the Chapter 04 debrief asks questions only; answers stay in `_trainer/`). Built by `_design/deck/build-deck.js`; rebuild it when a chapter's steps, times or UI names change.
+- **What should you see? boxes added:** 23 collapsible expected-result boxes in Chapters 04 to 10 (6, 4, 4, 1, 1, 1 and 6), using training-book-kit's `site/expect-box.html` on the site. The book prints them open. Chapter 04's Check Your Findings now has the full answers behind a **Show the answers** box. Chapters 01 to 03 and 11 have none, because their results are open-ended.
 - **After capture:** update the notes from `NOTES.md`, add red boxes to `_design/shots/annotations.json`, run `cd book && npm run annotate`, and rebuild the book.
 - **Open choice:** British "licence" versus "license". The course uses "license" to match Asraf's brief and the repository description.

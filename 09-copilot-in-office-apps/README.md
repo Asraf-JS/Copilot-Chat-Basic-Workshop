@@ -111,6 +111,21 @@ You need:
 
 > **Tip:** The comparison table may paste with numbers stored as text (left-aligned, with RM in the cell). If a formula returns an error, ask Copilot: `Some numbers in this table are stored as text. How do I convert them to numbers?`
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+**Lowest like-for-like total:** Seri Mutiara Technology at RM94,905.00, RM540.00 below Cyberjaya's adjusted RM95,445.00. If your table only has the printed totals, Copilot will say Cyberjaya (RM87,885.00), because it can only use the figures in the table.
+
+**Check formula:** something like `=B10+B11=B12` (subtotal plus tax equals grand total), filled across. The exact cells depend on where your rows landed. Using the printed grand totals, the results are:
+
+| Pinnacle Komputer | Seri Mutiara Technology | Cyberjaya Digital Supplies |
+|---|---|---|
+| **FALSE** | TRUE | TRUE |
+
+If your table has the corrected Pinnacle total, all three show TRUE. The check only catches the error when it compares against the printed figure.
+
+</details>
+
 ---
 
 ## Independent Practice

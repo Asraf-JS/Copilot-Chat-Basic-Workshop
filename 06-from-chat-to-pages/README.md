@@ -60,6 +60,19 @@ Try it.
 
 **Checkpoint:** Did one of your findings disappear or change? In most classes, at least one does. If yours all survived, you were lucky, and it can still happen next time.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+Your final table should still show all three Chapter 4 findings:
+
+- Pinnacle's grand total corrected to RM98,253.00 (printed RM98,523.00)
+- Seri Mutiara's quotation marked as expired
+- Cyberjaya's total adjusted for the warranty, RM95,445.00
+
+The usual casualty is Pinnacle's total, which goes back to the printed RM98,523.00, as in the screenshot. The expiry note and the warranty adjustment often disappear when the table is shortened to 8 rows.
+
+</details>
+
 > **Key point:** When an answer matters and you've been changing it for a while, stop iterating in the chat. Ask for one complete version that lists everything it must include, then move it to a Page, where it can't drift.
 
 ---
@@ -78,6 +91,23 @@ Try it.
 ![A Copilot response with the Edit in Pages option, and the new Page open beside the chat](./images/06-02-edit-in-pages.png)
 
 *The Page opens beside the chat. From now on, the Page is the version that counts.*
+
+<details markdown="1">
+<summary>What should you see?</summary>
+
+One table and a short list of actions:
+
+| | Pinnacle Komputer | Seri Mutiara Technology | Cyberjaya Digital Supplies |
+|---|---|---|---|
+| Grand total as printed | RM98,523.00 | RM94,905.00 | RM87,885.00 |
+| Recalculated grand total | RM98,253.00 (error of RM270.00) | RM94,905.00 | RM87,885.00 |
+| Valid today? | Yes, until 21 November 2026 | **No, expired 3 September 2026** | Yes, until 9 November 2026 |
+| Warranty | 3 years onsite | 3 years onsite | 1 year carry-in |
+| Like-for-like total | RM98,253.00 | RM94,905.00 | RM95,445.00 (with the RM280.00 per unit upgrade) |
+
+Open actions: Pinnacle to issue a revised quotation with the correct total; Seri Mutiara to revalidate in writing; Cyberjaya's upgrade price to be confirmed in a revised quotation if it's chosen.
+
+</details>
 
 4. Select the title at the top of the Page and rename it:
 
@@ -108,6 +138,17 @@ A Page is a document you can type in, with Copilot built in.
 
 > **Tip:** Type small fixes yourself. It's faster than asking Copilot, and you know exactly what changed.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+| | Pinnacle Komputer | Seri Mutiara Technology | Cyberjaya Digital Supplies |
+|---|---|---|---|
+| Status | Needs correction | Needs revalidation | Needs revised quotation |
+
+"Needs revised quotation" for Cyberjaya is the strict answer: its quotation doesn't include the 3-year warranty. "Ready" is also defensible if you're happy to compare it using the upgrade price it stated in writing (Section 6.2). Nobody is "Ready" for Pinnacle or Seri Mutiara.
+
+</details>
+
 ---
 
 ## 6.4 Write the Justification Memo
@@ -131,6 +172,23 @@ Section 7 of the policy lists what the memo must include. Ask Copilot to follow 
 *Memo first, evidence after. The HOD reads the recommendation, then checks the table.*
 
 > **Important:** Read every sentence of the memo as if you'd written it yourself, because you're the one signing it. Delete anything you can't back up from the quotations or the policy.
+
+<details markdown="1">
+<summary>What should you see?</summary>
+
+One heading for each item in Section 7, with these facts:
+
+- **Purpose:** 25 laptops for next quarter's new hires in Admin and Facilities
+- **Budget:** ADM-IT-2026-07, with confirmation that budget is available
+- **Quotations received:** PKS/Q/2026/0917 (22 September 2026), SMT-QT-26-0388 (4 August 2026), CDS/2026/Q-1142 (25 September 2026)
+- **Comparison:** the like-for-like totals, with Cyberjaya's warranty adjustment shown
+- **Recommendation:** Seri Mutiara Technology, RM94,905.00 including tax, for the lowest like-for-like price, 3-year onsite warranty, free delivery and shortest lead time
+- **Issues and how they're resolved:** Seri Mutiara expired, revalidation requested in writing; Pinnacle's total wrong by RM270.00, revised quotation requested
+- **Approval:** HOD, because the total is above RM20,000 and up to RM100,000 (Section 4)
+
+The recommendation must be **conditional** on Seri Mutiara's written revalidation. If the memo quotes RM98,523.00 or RM87,885.00 as a comparison figure, it has picked up an unchecked number.
+
+</details>
 
 ---
 
