@@ -73,9 +73,11 @@ Copilot shows up in two places in Outlook.
 
 <!-- VERIFY: capture 05-02 by hand: Outlook on the web with Summarize this email and the Copilot ribbon button both visible. -->
 
+<!-- Screenshot still to capture: 05-02-copilot-in-outlook.png. Remove this comment wrapper when the image is added.
 ![Outlook on the web with Summarize this email above a message and the Copilot button at the right end of the ribbon](./images/05-02-copilot-in-outlook.png)
 
 *Two ways in: summarise the open email, or chat about it in the pane.*
+-->
 
 > **Note:** With the paid license, Outlook also offers **Draft with Copilot** when you write an email. With Basic you draft in the Copilot pane instead, then copy the text into your reply.
 

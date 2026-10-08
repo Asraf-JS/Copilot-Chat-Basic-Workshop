@@ -35,7 +35,7 @@ Asraf names one chapter, for example `05-copilot-in-outlook`. CHAPTER means that
 ## Capturing
 
 - Send prompts exactly as written in `CHAPTER/prompts.md`. The only change allowed is replacing `[today's date]` with `14 October 2026`. If an answer is too long for one screen, scroll; don't change the prompt.
-- Each image line in the README has a description and an italic caption under it. Capture when the screen matches both.
+- Each image line in the README has a description and an italic caption under it. Capture when the screen matches both. Images still to capture sit inside a `<!-- Screenshot still to capture ... -->` comment: capture them the same way, and leave the comment for Claude to remove.
 - Wait for animations to finish: the greeting has stopped typing, the response is complete (Stop button gone), menus are fully open.
 - For a shot about message-box controls, capture with the box empty unless the description says text is typed.
 - Skip shots headless Playwright can't show (the Edge sidebar, the Windows desktop app, a personal Microsoft account). Add a `NOTES.md` line for each saying it needs a manual capture.

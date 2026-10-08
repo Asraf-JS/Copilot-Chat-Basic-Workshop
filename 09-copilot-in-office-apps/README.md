@@ -39,9 +39,11 @@ You need:
 2. On the **Home** tab, look for the **Copilot** button at the right end of the ribbon.
 3. Select it. The Copilot pane opens on the right.
 
+<!-- Screenshot still to capture: 09-01-word-copilot-pane.png. Remove this comment wrapper when the image is added.
 ![Word for the web with the Copilot button on the Home tab and the Copilot pane open](./images/09-01-word-copilot-pane.png)
 
 *If the Copilot button is there and the pane opens, you can do this chapter.*
+-->
 
 > **If you don't see this:** No Copilot button means your label is Copilot Chat (Basic), or your admin has turned Copilot off in the apps. Close Word and watch the demo. If the button is there but greyed out, check the document is saved in OneDrive (not on your computer), and that **AutoSave** is on.
 
@@ -66,9 +68,11 @@ You need:
 
 <!-- VERIFY: which Copilot actions in Word are available with M365 Copilot (Basic): the chat pane is expected; check whether inline "Rewrite" or "Draft with Copilot" also appear for Basic or only for Premium. -->
 
+<!-- Screenshot still to capture: 09-02-word-rewrite.png. Remove this comment wrapper when the image is added.
 ![The Copilot pane in Word with a shorter recommendation section](./images/09-02-word-rewrite.png)
 
 *Copilot suggests, you paste. Check the figures before you replace anything.*
+-->
 
 > **Important:** Your memo was checked line by line in Chapter 6. Any rewrite can change a figure or soften a condition. Read the new version against the old one before you keep it.
 
@@ -97,9 +101,11 @@ You need:
 
 <!-- VERIFY: whether Copilot in Excel (M365 Copilot Basic) can insert the formula itself, or only suggest it in the pane. The steps assume it suggests and you add it. -->
 
+<!-- Screenshot still to capture: 09-03-excel-check.png. Remove this comment wrapper when the image is added.
 ![Excel with the comparison table and a TRUE or FALSE check row, and the Copilot pane showing the suggested formula](./images/09-03-excel-check.png)
 
 *A check row in Excel catches the same arithmetic error you found with a calculator in Chapter 4.*
+-->
 
 > **Tip:** The comparison table may paste with numbers stored as text (left-aligned, with RM in the cell). If a formula returns an error, ask Copilot: `Some numbers in this table are stored as text. How do I convert them to numbers?`
 

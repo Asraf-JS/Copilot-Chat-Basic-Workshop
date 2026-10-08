@@ -41,9 +41,11 @@ Microsoft shows a short label on your account that tells you which Copilot exper
 
 <!-- VERIFY: confirm the exact wording of the Copilot Chat (Basic) label during the manual capture of 01-01. "M365 Copilot (Basic)" was confirmed under the name at the bottom left of the Copilot app. -->
 
+<!-- Screenshot still to capture: 01-01-copilot-label.png. Remove this comment wrapper when the image is added.
 ![The bottom of the Copilot app's left pane, showing the Copilot Chat (Basic) label under the account name](./images/01-01-copilot-label.png)
 
 *The label sits under your name at the bottom left. This account shows Copilot Chat (Basic).*
+-->
 
 4. Write your label down. You'll need it in Chapter 9, which is only for one of the labels.
 
@@ -67,9 +69,11 @@ This course is built for the two **Basic** labels. Everything on the main path w
 
 **Copilot Chat** is the work version. You reach it with your work account, and it shows the green shield you check in the next section.
 
+<!-- Screenshot still to capture: 01-02-work-vs-personal.png. Remove this comment wrapper when the image is added.
 ![The Microsoft 365 Copilot app signed in with a work account, next to the consumer Microsoft Copilot signed in with a personal account](./images/01-02-work-vs-personal.png)
 
 *Same name, different products. The work version (left) is signed in with a work account and shows the shield.*
+-->
 
 > **Key point:** The account matters more than the app. The same browser can open both versions. Check which account you're signed in with before you paste or upload anything.
 
