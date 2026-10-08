@@ -47,6 +47,7 @@ Ten stages, one per chapter: Check, Explore, Ask, Compare, Chase, Draft, Organis
 - 57 screenshots are referenced in the READMEs; the per-chapter lists are in `_design/shots/<chapter>.md`, generated from the README image lines. Regenerate them if you add or rename an image.
 - Codex captures on Asraf's Windows machine following `AGENTS.md` (the capture rules, read automatically by Codex), with the browser profile `.copilot-profile/`. One fresh Codex session per chapter at low reasoning effort keeps token use down. It works on a `shots/<chapter>` branch and never pushes to `main`. Keep `AGENTS.md` short: Codex sends it on every turn.
 - Capture account: one unlicensed user in Asraf's training tenant, showing **M365 Copilot (Basic)**, for every chapter. The Copilot Chat (Basic) label only exists in organisations over 2,000 users, so `01-01` (that label) and `01-02` (work and consumer Copilot side by side) are captured by hand.
+- Screenshots not yet captured are wrapped in a `<!-- Screenshot still to capture: FILE. ... -->` comment (image line and caption), so the site and book don't show broken images. When the image is added, remove the wrapper. `check-screenshots.mjs` still counts them as missing.
 - Researcher and Analyst may be listed in a Basic account's left pane. Codex never opens them and records what's visible in `NOTES.md`. Stop only if the label reads M365 Copilot (Premium).
 
 ---

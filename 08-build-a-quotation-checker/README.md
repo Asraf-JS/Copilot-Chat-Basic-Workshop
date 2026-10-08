@@ -45,9 +45,11 @@ Microsoft includes some ready-made agents. Try two before you build your own.
    [paste your paragraph here]
    ```
 
+<!-- Screenshot still to capture: 08-01-writing-coach.png. Remove this comment wrapper when the image is added.
 ![Writing Coach giving feedback on a paragraph from the memo](./images/08-01-writing-coach.png)
 
 *Writing Coach explains what to change and why, as well as rewriting.*
+-->
 
 **Prompt Coach**
 
@@ -177,9 +179,11 @@ Agents miss things too. When we built this agent, it caught the expired quotatio
 
 <!-- VERIFY: retake 08-05 after adding the extra line, showing the agent catching the Pinnacle total. -->
 
+<!-- Screenshot still to capture: 08-05-test-agent.png. Remove this comment wrapper when the image is added.
 ![The agent's check of the Pinnacle Komputer quotation, with the printed and correct grand totals side by side](./images/08-05-test-agent.png)
 
 *After one extra line in its instructions, the agent catches the error you found by hand in Chapter 4.*
+-->
 
 > **If you don't see this:** If an upload fails at a busy time, wait a minute and try again. If the agent still misses the error after the extra line, that's worth knowing too: keep checking totals yourself, whatever the agent says.
 

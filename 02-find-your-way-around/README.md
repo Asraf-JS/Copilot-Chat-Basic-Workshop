@@ -71,9 +71,11 @@ The same Copilot Chat, with the same green shield, is available in other places.
 2. Select the **Copilot** icon at the top right of the Edge window. A sidebar opens.
 3. Check the sidebar shows the green shield. If it shows your personal account, switch Edge profiles first.
 
+<!-- Screenshot still to capture: 02-02-edge-sidebar.png. Remove this comment wrapper when the image is added.
 ![The Edge window with the Copilot sidebar open on the right, showing the green shield](./images/02-02-edge-sidebar.png)
 
 *The Edge sidebar can read the web page you have open. That's useful for summarising a supplier's website.*
+-->
 
 **Teams**
 
@@ -198,9 +200,11 @@ On Windows, you can capture part of your screen and add it to a prompt without s
 
 <!-- VERIFY: capture 02-08 by hand in the Windows desktop app; confirm the option's name and position. In the browser, the + menu has Upload images and files, Attach cloud files and Designer, and no screenshot option. -->
 
+<!-- Screenshot still to capture: 02-08-screenshot-tool.png. Remove this comment wrapper when the image is added.
 ![The add menu in the message box with the screenshot option highlighted](./images/02-08-screenshot-tool.png)
 
 *Capture, then ask. The screenshot is treated like any other uploaded image.*
+-->
 
 > **If you don't see this:** The browser version of Copilot doesn't have the screenshot tool, and it's still reaching some Windows computers. Use the Windows Snipping Tool instead (Windows key + Shift + S), save the picture, and add it with **+** like any other file.
 
