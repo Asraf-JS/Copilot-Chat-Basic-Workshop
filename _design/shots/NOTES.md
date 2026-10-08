@@ -42,3 +42,12 @@ Codex adds one line here for each step where the screen did not match the notes.
 
 - 04-compare-the-quotations, 4.2 / 04-02 retake: README says three quotations and the policy attached to the same message; UI shows three quotation PDFs attached and finished uploading; adding procurement-policy.pdf in a second upload did not add a fourth attachment; captured the three-file fallback before any prompt, then removed its attachments and cleared the unsent temporary chat; no saved conversation was created.
 
+- 05-copilot-in-outlook, account/navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned in the Copilot app; neither opened or used.
+
+- 05-copilot-in-outlook, 5.3: README says summary at the top of the email thread; UI shows Summarize this email opens the right-hand Copilot pane; the summary reflects unchanged pricing, the 7-day stock hold and promised written revalidation.
+
+- 05-copilot-in-outlook, 5.2 controls / 05-02: README says Summarize, compose Draft with Copilot, and the Copilot pane button; UI shows Summarize this email is above the selected thread; Chat with Copilot opens the right pane; no separate Draft with Copilot control appears in compose, so 05-02 cannot show all three requested controls.
+
+- 05-copilot-in-outlook, 5.4 inbox check: README says Basic can answer across the inbox and find all three vendors; UI shows the exact mailbox prompts returned only the selected Seri Mutiara thread, including its 7-day stock hold; removing the current email attachment did not expose the other two training conversations; the warranty query could not find Cyberjaya.
+
+- 05-copilot-in-outlook, 5.5 draft controls check: README says Generate, tone and length controls, and Keep it; UI shows no classic Draft with Copilot editor or those controls appears in this Basic compose UI; used the Outlook Copilot chat pane to generate the supplied reply prompts; drafts were not sent.
