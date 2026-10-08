@@ -1,5 +1,7 @@
 # 02 - Find Your Way Around
 
+> **The purchase so far:** You've checked your Copilot label and the green shield (Chapter 1). Nothing has been bought yet: the department needs 25 laptops, and the first job is knowing what a good laptop quotation looks like.
+
 You'll spend most of today in the Microsoft 365 Copilot app, so it pays to know where things are. This chapter tours the app, shows the other places you can open Copilot Chat, and gets you asking your first purchase question: what should a good laptop quotation include?
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
