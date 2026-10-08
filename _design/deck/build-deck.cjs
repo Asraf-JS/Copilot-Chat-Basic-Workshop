@@ -70,9 +70,12 @@ pres.defineSlideMaster({
   ],
   slideNumber: { x: 12.1, y: 6.95, w: 0.6, h: 0.3, fontSize: 10, color: C.background1, align: "right" },
 });
-pres.defineSlideMaster({
-  title: "Content",
-  background: BG("content"),
+// Four content layouts, identical except for the background, so the art varies
+// from slide to slide while each image is stored once.
+const CONTENT_BG = ["content", "content-b", "content-c", "content-d"];
+CONTENT_BG.forEach((bg, i) => pres.defineSlideMaster({
+  title: i ? `Content ${i + 1}` : "Content",
+  background: BG(bg),
   objects: [
     { placeholder: { options: { name: "kicker", type: "body", x: 0.6, y: 0.4, w: 12, h: 0.35, fontSize: 14, color: C.accent4, margin: 0 }, text: "" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.6, y: 0.75, w: 12.1, h: 0.85, fontSize: 32, color: C.text1, valign: "top", align: "left", margin: 0 }, text: "" } },
@@ -80,7 +83,7 @@ pres.defineSlideMaster({
     { text: { text: "Copilot Chat Basic Workshop", options: { x: 1.05, y: 6.95, w: 6, h: 0.3, fontSize: 10, color: C.accent4, margin: 0 } } },
   ],
   slideNumber: { x: 12.1, y: 6.95, w: 0.6, h: 0.3, fontSize: 10, color: C.accent4, align: "right" },
-});
+}));
 pres.defineSlideMaster({
   title: "Statement",
   background: BG("statement"),
@@ -97,8 +100,11 @@ let section = null;
 function slide(master) { return pres.addSlide({ masterName: master, sectionTitle: section }); }
 function sec(title) { section = title; pres.addSection({ title }); }
 
+// Content slides rotate through the four content layouts.
+let contentCount = 0;
 function content(kicker, title, notes) {
-  const s = slide("Content");
+  const i = contentCount++ % CONTENT_BG.length;
+  const s = slide(i ? `Content ${i + 1}` : "Content");
   s.addText(kicker, { placeholder: "kicker" });
   s.addText(title, { placeholder: "title" });
   if (notes) s.addNotes(notes);

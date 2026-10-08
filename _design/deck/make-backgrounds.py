@@ -49,27 +49,29 @@ def glow(img, rgb, cx, cy, r, k):
 
 
 def ribbon(img, y0, amp, freq, phase, slope, c1, c2, strands=26, spread=0.11, k=0.55,
-           x0=0.0, x1=1.0, width=1.6, band=0.6):
+           x0=0.0, x1=1.0, width=1.6, band=0.6, vertical=False):
     """A flowing ribbon of fine strands, coloured c1 to c2 along its length.
 
     The centre line is y = y0 + slope*x + amp*sin(2*pi*freq*x + phase), in fractions of
-    the height. Strands fan out from the centre and fade at the ends.
+    the height. Strands fan out from the centre and fade at the ends. With vertical=True
+    the roles of x and y swap, so the ribbon runs top to bottom.
     """
-    u = X / W
+    X_, Y_, W_, H_ = (Y, X, H, W) if vertical else (X, Y, W, H)
+    u = X_ / W_
     fade = np.clip((u - x0) / 0.18, 0, 1) * np.clip((x1 - u) / 0.18, 0, 1)
     t = ((u - x0) / max(x1 - x0, 1e-3)).clip(0, 1)[..., None]
     col = c1 * (1 - t) + c2 * t
     for i in range(strands):
         f = i / (strands - 1) - 0.5
         yc = (y0 + slope * u + amp * (1 + 0.8 * f) * np.sin(2 * np.pi * freq * u + phase + 1.6 * f)
-              + spread * f * (0.6 + 0.4 * np.sin(2 * np.pi * u + phase))) * H
-        d = np.abs(Y - yc)
+              + spread * f * (0.6 + 0.4 * np.sin(2 * np.pi * u + phase))) * H_
+        d = np.abs(Y_ - yc)
         line = np.exp(-(d / width) ** 2)
         a = (k * line * fade * (1 - abs(f) * 0.9))[..., None]
         img = img * (1 - a) + col * a
     # A soft band of colour under the strands gives the ribbon body.
-    yc = (y0 + slope * u + amp * np.sin(2 * np.pi * freq * u + phase)) * H
-    body = np.exp(-((Y - yc) / (spread * H * band)) ** 2) * fade
+    yc = (y0 + slope * u + amp * np.sin(2 * np.pi * freq * u + phase)) * H_
+    body = np.exp(-((Y_ - yc) / (spread * H_ * band)) ** 2) * fade
     a = (0.22 * k * body)[..., None]
     return img * (1 - a) + col * a
 
@@ -104,8 +106,31 @@ save(img, "divider.jpg")
 img = canvas(hexrgb("F8F9FC"))
 img = glow(img, SKY, 1.02, -0.05, 0.25, 0.22)
 img = glow(img, VIOLET, 0.92, -0.05, 0.16, 0.10)
-img = ribbon(img, 0.02, 0.05, 1.0, 0.8, 0.10, TEAL, PURPLE, k=0.32, x0=0.70, spread=0.06, strands=18)
+img = ribbon(img, 0.00, 0.05, 1.0, 0.8, 0.12, TEAL, PURPLE, k=0.55, x0=0.66, spread=0.09, strands=26)
 save(img, "content.jpg")
+
+# Content variants, rotated across the content slides. The art stays in the corners
+# and along the edges, where no text sits.
+# B: a gentle ribbon along the bottom edge, with a faint glow bottom right.
+img = canvas(hexrgb("F8F9FC"))
+img = glow(img, SKY, 1.00, 0.62, 0.22, 0.20)
+img = glow(img, VIOLET, 0.80, 0.66, 0.18, 0.10)
+img = ribbon(img, 0.99, 0.03, 0.9, 1.4, -0.03, PURPLE, TEAL, k=0.55, x0=0.20, spread=0.07, strands=26)
+save(img, "content-b.jpg")
+
+# C: a cyan-to-violet ribbon arcing down the right edge, with a soft glow at the top right.
+img = canvas(hexrgb("F8F9FC"))
+img = glow(img, VIOLET, 1.04, 0.08, 0.20, 0.16)
+img = glow(img, SKY, 1.04, 0.40, 0.16, 0.16)
+img = ribbon(img, 0.99, 0.04, 0.8, 0.6, -0.04, CYAN, VIOLET, k=0.55, x0=-0.05, x1=0.75, spread=0.07, strands=26, vertical=True)
+save(img, "content-c.jpg")
+
+# D: a ribbon rising out of the bottom right corner.
+img = canvas(hexrgb("F8F9FC"))
+img = glow(img, SKY, 1.04, 0.60, 0.20, 0.22)
+img = glow(img, hexrgb("7ED6DF"), 0.92, 0.62, 0.14, 0.12)
+img = ribbon(img, 1.32, 0.04, 0.8, 0.5, -0.45, TEAL, PURPLE, k=0.60, x0=0.58, spread=0.08, strands=26)
+save(img, "content-d.jpg")
 
 # Key messages: pale lavender, a wide ribbon across the bottom.
 img = canvas(hexrgb("F3F4FD"))
