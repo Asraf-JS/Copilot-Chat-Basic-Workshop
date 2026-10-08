@@ -1,5 +1,7 @@
 # 03 - Write Better Prompts
 
+> **The purchase so far:** You know what a complete laptop quotation should include (Chapter 2). Now you write the requirements you'll send to three vendors.
+
 What Copilot gives you depends on what you give it. In this chapter you use a four-part framework, GCSE, to write the requirements you'll send to the three laptop vendors. Then you improve the answer, check where it came from, and save your best prompt so you can reuse it.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.

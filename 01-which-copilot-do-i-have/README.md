@@ -10,6 +10,18 @@ Before you upload a single quotation, you need to know two things: which version
 
 ---
 
+## Today's Task
+
+Today you handle one real purchase from start to finish, using only the Copilot features that come with your license.
+
+> **You're an executive in the Admin and Facilities department at Teratai Holdings Berhad.** The department needs 25 new laptops for next quarter's hires. Company policy says any purchase above RM20,000 needs three written quotations, a comparison, and a justification memo before the HOD signs off.
+
+Each chapter takes the purchase one step further. In this chapter you check which Copilot you have, so it's safe to work with company documents. Then you find your way around, write the requirements for vendors, compare the quotations that come back, chase the vendors, write the memo, put everything in one place, and build an agent for next time. In the capstone, a second purchase arrives and you run it on your own. The [stage table on the home page](../#course-scenario) shows every step.
+
+> **Note:** Teratai Holdings, the vendors and everyone in the sample files are fictional.
+
+---
+
 ## What You Will Learn
 
 - Find the Copilot label on your Microsoft 365 account

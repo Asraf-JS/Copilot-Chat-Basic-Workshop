@@ -24,6 +24,8 @@ Standard access can be slow or limited at peak times. Every chapter has at least
 
 You're an executive in the Admin and Facilities department at **Teratai Holdings Berhad** (fictional, Kuala Lumpur). The department buys 25 laptops. Policy: above RM20,000 needs three written quotations, a comparison and a justification memo before the HOD signs off. Fictional HOD: Encik Faizal Rahman. Budget code: ADM-IT-2026-07. Class date used in screenshots and prompts: 14 October 2026.
 
+Chapter 01 tells participants the story under **Today's Task**, and Chapters 02 to 09 open with a one-line **The purchase so far** box. If a chapter's order or outcome changes, update the boxes that follow it.
+
 Ten stages, one per chapter: Check, Explore, Ask, Compare, Chase, Draft, Organise, Reuse, Extend (optional), Repeat (capstone).
 
 - Each chapter has `README.md` (notes) and `prompts.md` (in place of the `copy-paste.md` used in the Power Automate course).

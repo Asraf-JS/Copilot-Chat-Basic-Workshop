@@ -2,6 +2,8 @@
 
 > **Optional chapter, for M365 Copilot (Basic) only.** If your label in section 1.1 is **Copilot Chat (Basic)**, you don't have Copilot inside Word and Excel. Watch your trainer's demo, or go straight to [Chapter 10](../10-capstone/).
 
+> **The purchase so far:** The memo is exported to Word and the comparison is on a Page (Chapter 6). This optional chapter polishes both inside the Office apps.
+
 If your organisation is under 2,000 users, you probably have **M365 Copilot (Basic)**, which includes Copilot inside the Office apps with standard access. In this chapter you open the memo you exported in Chapter 6 in Word, and the comparison in Excel, and use Copilot where the documents live.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.

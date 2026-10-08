@@ -1,5 +1,7 @@
 # 08 - Build a Quotation Checker Agent
 
+> **The purchase so far:** The laptop purchase sits in one Notebook, waiting for the revised quotations (Chapter 7). Before the next purchase comes along, you make the Chapter 4 checks reusable.
+
 The checks you ran in Chapter 4 took an hour and about a dozen prompts. The next purchase will need the same checks. An agent is a version of Copilot with your instructions built in, so in this chapter you write those checks once and get the same careful review every time you upload a quotation.
 
 > **Prompts:** every prompt and the full agent instructions are in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.

@@ -1,5 +1,7 @@
 # 06 - From Chat to Pages
 
+> **The purchase so far:** You've compared the quotations (Chapter 4) and chased the vendors by email (Chapter 5). Now the HOD needs a memo.
+
 Your comparison lives in a long chat, and long chats have a weakness: the more you go back and forth, the more likely something you agreed earlier quietly drops out. In this chapter you see that happen, then move the comparison into a Copilot Page, where the content stays put and you can edit it like a document. You write the justification memo on the same Page, share it, and export it for the HOD.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.

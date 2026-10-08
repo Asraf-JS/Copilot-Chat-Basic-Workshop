@@ -1,6 +1,8 @@
 # 04 - Compare the Quotations
 
-The three quotations have arrived. Before the HOD can sign off, policy says you need a written comparison and a justification memo. In this chapter you upload the quotations and the procurement policy, ask Copilot to build the comparison, and then do the part that matters most: check its work. Each quotation has a problem. Your job is to find all three.
+> **The purchase so far:** Your requirements went out to three vendors (Chapter 3), and their quotations are back.
+
+Before the HOD can sign off, policy says you need a written comparison and a justification memo. In this chapter you upload the quotations and the procurement policy, ask Copilot to build the comparison, and then do the part that matters most: check its work. Each quotation has a problem. Your job is to find all three.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 

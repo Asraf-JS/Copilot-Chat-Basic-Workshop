@@ -1,5 +1,7 @@
 # 05 - Chase Vendors with Copilot in Outlook
 
+> **The purchase so far:** Your comparison found a problem in each quotation (Chapter 4). Before the HOD sees a memo, each vendor has to fix theirs.
+
 Your comparison left you with things to chase: one quotation needs a corrected total, one needs to be revalidated, and one vendor has written about warranty options. Those conversations happen in email. Copilot in Outlook is included with both Basic labels, and it can summarise a thread, answer questions about an email, and draft your replies.
 
 > **Prompts:** every prompt and email you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
