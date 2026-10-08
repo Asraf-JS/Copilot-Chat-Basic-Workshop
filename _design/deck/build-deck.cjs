@@ -1,6 +1,6 @@
 // Trainer deck for the Copilot Chat Basic Workshop.
 // Usage: NODE_PATH=<node_modules with pptxgenjs, react-icons, react, react-dom, sharp> PPTX_SKILL=<pptx skill dir, for apply_theme.js> \
-//   node _design/deck/build-deck.js . Copilot-Chat-Basic-Workshop-Deck.pptx
+//   node _design/deck/build-deck.cjs . Copilot-Chat-Basic-Workshop-Deck.pptx
 // Design follows Microsoft's own course decks (Fluent): white space, Segoe UI,
 // one blue accent, outline icons, flat panels, blue section dividers.
 const path = require("path");
@@ -19,14 +19,15 @@ const THEME = {
   headFontFace: "Segoe UI Semibold",
   bodyFontFace: "Segoe UI",
   colors: {
-    dk1: "242424", lt1: "FFFFFF", dk2: "243A5E", lt2: "F5F5F5",
-    accent1: "0078D4", accent2: "243A5E", accent3: "D83B01",
+    dk1: "1A1A2E", lt1: "FFFFFF", dk2: "1E2761", lt2: "F5F5F5",
+    accent1: "6B5DD3", accent2: "028090", accent3: "D83B01",
     accent4: "616161", accent5: "107C10", accent6: "D13438",
-    hlink: "0078D4", folHlink: "243A5E",
+    hlink: "6B5DD3", folHlink: "1E2761",
   },
 };
 const HEX = THEME.colors;
 const RULE = "E0E0E0";
+const CYAN = "00EEFC"; // the accent in Asraf's logo, used on dark slides only
 
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE"; // 13.333 x 7.5
@@ -44,11 +45,15 @@ async function icon(name, color) {
 }
 
 // ---------- layouts ----------
+// Backgrounds are soft mesh gradients from _design/deck/make-backgrounds.py.
+const BG = (n) => ({ path: path.join(REPO, "_design/deck/bg", n + ".jpg") });
+const LOGO = (v, x, y, d) => ({ image: { path: path.join(REPO, "_design/deck/bg", `logo-${v}.png`), x, y, w: d, h: d, altText: "Asraf JS logo" } });
 pres.defineSlideMaster({
   title: "Title",
-  background: { color: C.text1 },
+  background: BG("title"),
   objects: [
-    { placeholder: { options: { name: "kicker", type: "body", x: 0.8, y: 1.6, w: 11, h: 0.4, fontSize: 16, color: C.background2, margin: 0 }, text: "" } },
+    LOGO("light", 0.72, 0.5, 0.85),
+    { placeholder: { options: { name: "kicker", type: "body", x: 0.8, y: 1.6, w: 11, h: 0.4, fontSize: 16, color: CYAN, margin: 0 }, text: "" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.1, w: 11.5, h: 1.5, fontSize: 48, color: C.background1, valign: "top", align: "left", margin: 0 }, text: "" } },
     { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 3.7, w: 10, h: 1.0, fontSize: 22, color: C.background2, valign: "top", margin: 0 }, text: "" } },
     { placeholder: { options: { name: "meta", type: "body", x: 0.8, y: 6.2, w: 10.5, h: 0.4, fontSize: 14, color: C.background2, margin: 0 }, text: "" } },
@@ -56,28 +61,31 @@ pres.defineSlideMaster({
 });
 pres.defineSlideMaster({
   title: "Divider",
-  background: { color: C.accent1 },
+  background: BG("divider"),
   objects: [
-    { placeholder: { options: { name: "num", type: "body", x: 0.8, y: 1.0, w: 4, h: 1.6, fontSize: 88, fontFace: "Segoe UI Light", color: C.background1, valign: "bottom", margin: 0 }, text: "" } },
+    LOGO("light", 0.75, 6.55, 0.55),
+    { placeholder: { options: { name: "num", type: "body", x: 0.8, y: 1.0, w: 4, h: 1.6, fontSize: 88, fontFace: "Segoe UI Light", color: CYAN, valign: "bottom", margin: 0 }, text: "" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.85, w: 11.5, h: 1.2, fontSize: 40, color: C.background1, valign: "top", align: "left", margin: 0 }, text: "" } },
-    { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 4.3, w: 10, h: 1.6, fontSize: 18, color: C.background1, valign: "top", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 4.3, w: 7.6, h: 1.6, fontSize: 18, color: C.background1, valign: "top", margin: 0 }, text: "" } },
   ],
   slideNumber: { x: 12.1, y: 6.95, w: 0.6, h: 0.3, fontSize: 10, color: C.background1, align: "right" },
 });
 pres.defineSlideMaster({
   title: "Content",
-  background: { color: C.background1 },
+  background: BG("content"),
   objects: [
     { placeholder: { options: { name: "kicker", type: "body", x: 0.6, y: 0.4, w: 12, h: 0.35, fontSize: 14, color: C.accent4, margin: 0 }, text: "" } },
     { placeholder: { options: { name: "title", type: "title", x: 0.6, y: 0.75, w: 12.1, h: 0.85, fontSize: 32, color: C.text1, valign: "top", align: "left", margin: 0 }, text: "" } },
-    { text: { text: "Copilot Chat Basic Workshop", options: { x: 0.6, y: 6.95, w: 6, h: 0.3, fontSize: 10, color: C.accent4, margin: 0 } } },
+    LOGO("dark", 0.55, 6.83, 0.42),
+    { text: { text: "Copilot Chat Basic Workshop", options: { x: 1.05, y: 6.95, w: 6, h: 0.3, fontSize: 10, color: C.accent4, margin: 0 } } },
   ],
   slideNumber: { x: 12.1, y: 6.95, w: 0.6, h: 0.3, fontSize: 10, color: C.accent4, align: "right" },
 });
 pres.defineSlideMaster({
   title: "Statement",
-  background: { color: C.background1 },
+  background: BG("statement"),
   objects: [
+    LOGO("dark", 0.75, 0.55, 0.6),
     { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.2, w: 11.2, h: 2.0, fontSize: 40, color: C.accent1, valign: "bottom", align: "left", margin: 0 }, text: "" } },
     { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 4.45, w: 10.5, h: 1.0, fontSize: 20, color: C.accent4, valign: "top", margin: 0 }, text: "" } },
   ],
@@ -97,9 +105,13 @@ function content(kicker, title, notes) {
   return s;
 }
 
-// flat panel, square corners
-function panel(s, x, y, w, h, fill = C.background2, name = "Panel") {
-  s.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { color: fill }, line: { type: "none" }, objectName: name });
+// Fluent-style card: white, small radius, soft shadow. Dark fills stay flat.
+function panel(s, x, y, w, h, fill = C.background1, name = "Panel") {
+  const light = fill === C.background1 || fill === C.background2;
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, {
+    x, y, w, h, rectRadius: 0.1, fill: { color: light ? C.background1 : fill }, line: { type: "none" }, objectName: name,
+    shadow: light ? { type: "outer", color: "1B2A4A", opacity: 0.12, blur: 14, offset: 3, angle: 90 } : undefined,
+  });
 }
 function rule(s, x, y, w) {
   s.addShape(pres.shapes.LINE, { x, y, w, h: 0, line: { color: RULE, width: 1 }, objectName: "Divider line" });
@@ -109,10 +121,13 @@ function ico(s, data, x, y, d = 0.5) { s.addImage({ data, x, y, w: d, h: d, altT
 function txt(s, text, o) { s.addText(text, Object.assign({ margin: 0, isTextBox: true, valign: "top" }, o)); }
 function head(s, text, x, y, w, size = 20, color = C.text1) { txt(s, text, { x, y, w, h: 0.5, fontSize: size, fontFace: HEAD, color }); }
 
+// Product UI floating on a gradient panel, as in Microsoft's marketing pages.
 function shot(s, rel, x, y, w, alt) {
-  const h = (w * 9) / 16;
-  s.addImage({ path: path.join(REPO, rel), x, y, w, h, altText: alt });
-  s.addShape(pres.shapes.RECTANGLE, { x, y, w, h, fill: { type: "none" }, line: { color: RULE, width: 1 }, objectName: "Screenshot border" });
+  const h = (w * 9) / 16, pad = 0.28;
+  s.addImage({ path: path.join(REPO, "_design/deck/bg/panel.jpg"), x, y, w, h, altText: "", sizing: { type: "cover", w, h } });
+  const iw = w - 2 * pad, ih = (iw * 9) / 16, iy = y + (h - ih) / 2;
+  s.addShape(pres.shapes.RECTANGLE, { x: x + pad, y: iy, w: iw, h: ih, fill: { color: C.background1 }, line: { color: RULE, width: 0.75 }, objectName: "Screenshot frame", shadow: { type: "outer", color: "1B2A4A", opacity: 0.25, blur: 16, offset: 4, angle: 90 } });
+  s.addImage({ path: path.join(REPO, rel), x: x + pad, y: iy, w: iw, h: ih, altText: alt });
 }
 
 // numbered list in the Microsoft style: blue numerals, no circles
