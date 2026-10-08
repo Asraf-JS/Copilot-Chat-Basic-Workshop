@@ -183,6 +183,18 @@ Agents miss things too. When we built this agent, it caught the expired quotatio
 
 > **If you don't see this:** If an upload fails at a busy time, wait a minute and try again. If the agent still misses the error after the extra line, that's worth knowing too: keep checking totals yourself, whatever the agent says.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+- **It asks for the date**, if you didn't give one (instruction 1).
+- **Pinnacle:** a table with the printed grand total RM98,523.00 and its own total RM98,253.00 side by side, flagging a RM270.00 difference. Before the fix line, it may say the total is correct, as ours did.
+- **Seri Mutiara:** expired on 3 September 2026; the supplier must revalidate in writing.
+- **Cyberjaya:** 1-year carry-in warranty, against 3 years onsite from the other two, so not like-for-like.
+- **Questions to ask the supplier:** one per problem, at the end.
+- **No recommendation**, unless you ask for one (the last rule in the instructions).
+
+</details>
+
 ---
 
 ## 8.7 Share the Agent
