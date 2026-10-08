@@ -70,3 +70,13 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 06-from-chat-to-pages, 6.6 Word PDF path: README says File > Export > Download as PDF; UI shows the exported document opens in Word for the web; File > Export offers Download as PDF, Download as PDF with comments and Download as ODT.
 
 - 06-from-chat-to-pages, 6.6 export result: README says Page, Word document and PDF contain the memo; UI shows Word document was created and opened; its PDF download was saved locally in the repository profile folder; the memo is above the comparison.
+- 07-copilot-notebooks, 7.1 creation check: README says Notebooks > New notebook > Create opens references, chat and notes; UI shows Notebooks > New notebook asks for Notebook name, then Next opens an add-references step and Create opens the notebook with Chat history and a Content pane containing Creations and References.
+
+- 07-copilot-notebooks, 7.2 references check: README says Add references uploads four PDFs and adds a Page and OneDrive Word memo; UI shows Add references offers Upload files and OneDrive files; the four existing training PDFs and exported Word memo were selected together, then the saved .page was found by name and added; six references are listed; no limit was reached with six.
+
+- 07-copilot-notebooks, 7.4 notes check: README says add a note under the references, or use a Page if notes are unavailable; UI shows no standalone note control is shown; New Page opens a Page within the Notebook, where the supplied Vendor emails note was entered with 14 October 2026.
+
+- 07-copilot-notebooks, 7.4 Page reference search: README says add the fallback Page as a reference; UI shows the saved Vendor emails Page appears under the Notebook Creations; searching its exact new name in Add references returned no results yet, so it could not be added as an extra reference during this run.
+
+- 07-copilot-notebooks, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
