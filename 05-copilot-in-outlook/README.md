@@ -99,6 +99,21 @@ Copilot shows up in two places in Outlook.
 
 > **Key point:** Summaries can give equal weight to an early message and a later one that replaced it. When a thread changes its mind, check the summary against the most recent email.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+The summary should give Seri Mutiara's **latest** position, from the follow-up email:
+
+- pricing is unchanged from quotation SMT-QT-26-0388
+- they can hold 25 units for 7 days; after that, the next shipment could add 3 weeks to delivery
+- a revalidated quotation in writing, with a new date and validity, follows once you confirm
+
+If the summary says prices "may have changed", it's reporting the first email, which the follow-up replaced.
+
+The email isn't a revalidated quotation. Section 5.2 still needs one in writing, which you ask for in 5.5.
+
+</details>
+
 ---
 
 ## 5.4 Ask Questions About Your Email
@@ -122,6 +137,23 @@ Ask Copilot what a vendor needs from you. With Basic, the Copilot pane works wit
 ![The Copilot pane in Outlook answering from the open Seri Mutiara conversation](./images/05-04-inbox-question.png)
 
 *Copilot answered from the conversation you had open. To ask about another vendor, open that email first.*
+
+<details markdown="1">
+<summary>What should you see?</summary>
+
+**First prompt**, with the Seri Mutiara conversation open: a table with one vendor.
+
+| Vendor | What they asked | Deadline |
+|--------|-----------------|----------|
+| Seri Mutiara Technology | Confirm the order, and that you still need the backpacks and imaging, so it can issue a revalidated quotation | Stock held for 7 days |
+
+Pinnacle (asking when you'll decide) and Cyberjaya (asking which warranty option you prefer) are missing, because their emails weren't open. If your Copilot found all three, it can search your whole mailbox. Check each row against the emails.
+
+**Second prompt**, with the Cyberjaya email open: Cyberjaya Digital Supplies offers the **3-year onsite upgrade at RM280.00 per unit**. It also offers a 2-year carry-in extension at RM150.00 per unit, which doesn't meet the policy's three-year minimum (Section 6.3).
+
+If Copilot thinks you're the vendor, send: `The vendor is the person who signs each email, not the sender. Please answer again.`
+
+</details>
 
 > **Key point:** An answer that looks complete may only cover what Copilot could see. Here it found one vendor, not three. Always ask yourself what Copilot was looking at.
 
@@ -152,6 +184,20 @@ Policy Section 5.2 says an expired quotation must be revalidated **in writing**.
 
 > **Important:** Always read a Copilot draft before you send it. Check names, numbers and any promise it makes on your behalf, such as a date or a commitment to buy. In real life this email goes to a supplier.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+A short, polite reply to **Nur Aisyah** that:
+
+- thanks her for confirming the price is unchanged
+- asks for a revalidated quotation **in writing**, for the same 25 laptops, bags and imaging, with a new date and at least 30 days' validity
+- asks her to hold the 25 units while you complete internal approval
+- mentions quotation SMT-QT-26-0388
+
+Delete anything that commits you to buy. Approval hasn't happened yet.
+
+</details>
+
 ---
 
 ## 5.6 Draft a Correction Request
@@ -174,6 +220,17 @@ Policy Section 6.4 says an arithmetic error must be corrected by the vendor in a
 *The figures came from your own check in Chapter 4. Copilot only wrote the words around them.*
 
 > **Tip:** You give Copilot the numbers. Don't ask Copilot in Outlook to work out the correct total for you: it can't see the quotation PDF, and you've already checked it.
+
+<details markdown="1">
+<summary>What should you see?</summary>
+
+Your prompt should read "printed as **RM98,523.00**, but the subtotal plus tax comes to **RM98,253.00**".
+
+The draft to **Kelvin** should name quotation PKS/Q/2026/0917, give both figures exactly as you typed them, ask for a revised quotation with the correct total, and say you'll decide once all quotations are confirmed. There should be no blame and no promise to buy.
+
+If the draft shows any other figure, such as a rounded total or the RM270.00 difference in place of a total, correct it before you copy it.
+
+</details>
 
 ---
 

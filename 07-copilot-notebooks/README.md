@@ -102,6 +102,24 @@ Questions that used to need three files open at once now take one prompt.
 
 > **Key point:** Copilot answers from the references you added. If a fact lives only in your inbox, such as Seri Mutiara's 7-day stock hold, the Notebook doesn't know it. Add it to a Page in the Notebook, or paste it into your prompt.
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+**Open actions** (first prompt), each with a citation:
+
+- Seri Mutiara: revalidate its quotation in writing (Section 5.2)
+- Pinnacle: issue a revised quotation with the correct total, RM98,253.00 (Section 6.4)
+- Cyberjaya: the warranty upgrade priced into the comparison (Section 6.3)
+- HOD approval of the memo (Section 4)
+
+Copilot may also list budget confirmation, if your memo mentions it. It won't mention the 7-day stock hold until you add the Vendor emails Page in 7.4.
+
+**RM1,000 higher** (second prompt): Seri Mutiara becomes RM95,905.00 against Cyberjaya's adjusted RM95,445.00. **Cyberjaya becomes the lowest like-for-like quotation, by RM460.00, so the recommendation changes.** If Copilot adds the RM1,000 before tax (RM94,905.00 + RM1,080.00 = RM95,985.00), the answer is the same.
+
+**Status update** (third prompt): at most five bullets. Done: three quotations received and checked, comparison and memo on a Page. Pending: Seri Mutiara's revalidation and Pinnacle's corrected quotation. Next step: submit the memo to the HOD once both arrive.
+
+</details>
+
 ---
 
 ## 7.4 Keep the Notebook Up to Date
