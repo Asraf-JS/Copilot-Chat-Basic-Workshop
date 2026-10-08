@@ -57,20 +57,27 @@ You need:
 ## 4.2 Start a New Chat and Upload the Files
 
 1. In the Copilot app, select **New chat**. Check the green shield.
-2. In the message box, select **+**, then **Upload images and files**.
-3. Go to the extracted folder. Select the three quotations at once: click the first, then hold **Ctrl** and click the other two. Select **Open**. Copilot takes up to three files at a time.
-4. Select **+** > **Upload images and files** again and add `procurement-policy.pdf`.
-5. Wait until each file shows in the message box without a progress circle.
+Copilot takes at most three files in one message, so the policy goes first, on its own.
 
-<!-- VERIFY: retake 04-02 showing the files attached. Codex found more than three files are refused in one selection; check whether a fourth file can be added to the same message with a second upload, or whether it has to go in the next message. -->
+2. In the message box, select **+**, then **Upload images and files**. Go to the extracted folder, select `procurement-policy.pdf` and select **Open**.
+3. Wait for the upload to finish, then send this message with it:
 
-![The message box with the quotation and policy files attached and ready](./images/04-02-files-uploaded.png)
+   ```
+   Here's our procurement policy. Confirm in one sentence that you've read it, then wait for the quotations.
+   ```
 
-*The files are attached to the same message. Don't send a prompt until every file has finished uploading.*
+4. Select **+** > **Upload images and files** again. Select the three quotations at once: click the first, then hold **Ctrl** and click the other two. Select **Open**.
+5. Wait until each file shows in the message box without a progress circle. Don't send anything yet: the prompt for these files is in 4.3.
+
+![The message box with the three quotation files attached and ready](./images/04-02-files-uploaded.png)
+
+*Three quotations attached, ready for the prompt in 4.3. The policy is already in the chat from your first message.*
+
+> **Note:** You may see a notice that uploading from your device saves a copy to your OneDrive. That's normal: the files stay in your organisation's storage.
 
 > **Important:** Upload all four files in the **same chat**. Copilot can only compare files that are in the conversation it's working in. A quotation you uploaded in a different chat is invisible to this one.
 
-> **If you don't see this:** If Copilot won't take the policy in the same message, send the first prompt in 4.3 with the three quotations, then upload the policy in the same chat and send `I've added our procurement policy. Include it too.` If upload is greyed out or missing, your admin may have turned it off, or standard access may be limiting uploads at a busy time. Wait a few minutes and try again, or tell your trainer.
+> **If you don't see this:** If Copilot refuses a file, check you've attached no more than three to one message. If upload is greyed out or missing, your admin may have turned it off, or standard access may be limiting uploads at a busy time. Wait a few minutes and try again, or tell your trainer.
 
 ---
 
@@ -225,7 +232,7 @@ Ask Copilot one question about the quotations that you can check in under a minu
 | Symptom | What to check |
 |---------|---------------|
 | Copilot only talks about one or two quotations | Not every file uploaded. Check the files in your first message, and upload the missing one in the same chat |
-| Copilot refuses some of your files | It takes up to three files at a time. Upload the rest with a second **+** in the same chat |
+| Copilot refuses some of your files | It takes at most three files per message. Send the extra file in its own message in the same chat |
 | Copilot says it can't see the files | You started a new chat. Go back to the chat where you uploaded them, or upload them again |
 | The table has figures that aren't in any quotation | Ask "Where in the quotation did you find this figure? Quote it." Remove anything it can't quote |
 | Copilot says every quotation is valid | Check you gave it today's date in 4.6 |

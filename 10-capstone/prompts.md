@@ -1,6 +1,6 @@
 # 10 - Capstone: The Training Vendor Purchase: Prompts
 
-Starter prompts for each stage of the capstone. Try writing your own with GCSE first, and use these only if you get stuck. Hover over a grey box and click the copy icon in its top-right corner.
+Suggested prompts for each stage of the capstone. Try writing your own with GCSE first, and use these only if you get stuck. Hover over a grey box and click the copy icon in its top-right corner.
 
 > **Session guide:** Part 1 runs in a new chat. Part 2 starts in your **Quotation Checker** agent, then moves to a new chat with all four files uploaded. Parts 3 and 4 run in that same chat. Part 5 runs in Outlook.
 
@@ -72,7 +72,7 @@ What's still outstanding before the HOD can approve this? For each item, say whi
 
 ## Part 5: Chasing emails
 
-**Session:** Outlook, new mail to yourself, Draft with Copilot | **Grounding:** your prompt
+**Session:** Outlook, new mail to yourself, Copilot pane | **Grounding:** your prompt
 
 Use a subject that starts `[CCB TRAINING]`. Fill in the square brackets from your own findings.
 

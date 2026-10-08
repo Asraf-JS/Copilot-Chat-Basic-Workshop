@@ -1,6 +1,6 @@
 # 05 - Chase Vendors with Copilot in Outlook
 
-Your comparison left you with things to chase: one quotation needs a corrected total, one needs to be revalidated, and one vendor has written about warranty options. Those conversations happen in email. Copilot in Outlook is included with both Basic labels, and it can summarise a thread, answer questions about your inbox, and draft your replies.
+Your comparison left you with things to chase: one quotation needs a corrected total, one needs to be revalidated, and one vendor has written about warranty options. Those conversations happen in email. Copilot in Outlook is included with both Basic labels, and it can summarise a thread, answer questions about an email, and draft your replies.
 
 > **Prompts:** every prompt and email you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
@@ -14,7 +14,7 @@ Your comparison left you with things to chase: one quotation needs a corrected t
 
 - Find Copilot in Outlook on the web and in the new Outlook for Windows
 - Summarise an email thread
-- Ask Copilot questions about your inbox
+- Ask Copilot questions about an email, and notice what it can and can't see
 - Draft a reply with Copilot, then adjust its tone and length
 - Check a draft before you send it
 
@@ -66,17 +66,18 @@ You create four emails: one each from the three vendors, and a follow-up from Se
 
 ## 5.2 Find Copilot in Outlook
 
-Copilot shows up in three places in Outlook.
+Copilot shows up in two places in Outlook.
 
-1. **On an open email:** a **Summarize** option at the top of the message. You use it in 5.3.
-2. **In a reply or new email:** a **Copilot** icon in the toolbar, with **Draft with Copilot**. You use it in 5.5.
-3. **The Copilot pane:** a **Copilot** button at the top of Outlook (or in the bar of apps on the left) opens a chat pane next to your mail. You use it in 5.4.
+1. **On an open email:** **Summarize this email**, just above the message. You use it in 5.3.
+2. **The Copilot pane:** the **Copilot** button at the right end of the ribbon opens a chat pane beside your mail. It works with the email you have open. You use it in 5.4 to 5.6.
 
-<!-- VERIFY: the current names and positions in Outlook on the web for a Copilot Chat (Basic) account: "Summarize" or "Summary by Copilot" on an open message, the Copilot icon and "Draft with Copilot" in compose, and the Copilot pane button. -->
+<!-- VERIFY: capture 05-02 by hand: Outlook on the web with Summarize this email and the Copilot ribbon button both visible. -->
 
-![Outlook on the web with the Summarize option, the Copilot compose icon and the Copilot pane button highlighted](./images/05-02-copilot-in-outlook.png)
+![Outlook on the web with Summarize this email above a message and the Copilot button at the right end of the ribbon](./images/05-02-copilot-in-outlook.png)
 
-*Three ways in: summarise a message, draft a reply, or chat in the pane.*
+*Two ways in: summarise the open email, or chat about it in the pane.*
+
+> **Note:** With the paid license, Outlook also offers **Draft with Copilot** when you write an email. With Basic you draft in the Copilot pane instead, then copy the text into your reply.
 
 > **If you don't see this:** Copilot in Outlook can take time to appear for a new account, and your admin can turn it off. If you can't find any of the three, check you're in Outlook on the web with your work account, then tell your trainer. If Copilot shows but doesn't respond, standard access may be busy: wait a minute and try again.
 
@@ -85,10 +86,10 @@ Copilot shows up in three places in Outlook.
 ## 5.3 Summarise a Vendor Thread
 
 1. Open the Seri Mutiara conversation (subject **[CCB TRAINING] Quotation SMT-QT-26-0388 for 25 laptops**).
-2. Select **Summarize** at the top of the message. A short summary appears above the email.
+2. Select **Summarize this email** above the message. The Copilot pane opens on the right with a summary of the whole conversation.
 3. Read the summary. Check one thing in particular: does it give the vendor's **latest** position? The first email said prices may have changed. The follow-up says something different.
 
-![A Copilot summary at the top of the Seri Mutiara thread](./images/05-03-thread-summary.png)
+![The Copilot pane beside the Seri Mutiara thread, showing a summary and key points](./images/05-03-thread-summary.png)
 
 *A summary of the whole conversation. Check that it reflects the latest message.*
 
@@ -96,31 +97,31 @@ Copilot shows up in three places in Outlook.
 
 ---
 
-## 5.4 Ask Questions About Your Inbox
+## 5.4 Ask Questions About Your Email
 
-The Copilot pane can look across your mailbox and calendar, not just the email in front of you.
+Ask Copilot what a vendor needs from you. With Basic, the Copilot pane works with the email you have open, so open the right conversation first.
 
-1. Select the **Copilot** button to open the pane.
+1. Open the Seri Mutiara conversation and select the **Copilot** button to open the pane.
 2. Paste this prompt and send it:
 
    ```
    Look at my emails with [CCB TRAINING] in the subject. Which vendors are waiting for a reply from me, and what does each one need from me? Put it in a table with the vendor, what they asked, and any deadline.
    ```
 
-3. Check the table against the emails. Did Copilot find all three vendors, and the deadline in the Seri Mutiara follow-up?
-4. Try a second question:
+3. Check the table against the emails. You'll probably see only Seri Mutiara, with its 7-day stock hold. Copilot answered from the open conversation, not the whole inbox.
+4. Open the Cyberjaya Digital email and ask:
 
    ```
    Which vendor has offered a warranty upgrade, and at what price per unit?
    ```
 
-![The Copilot pane in Outlook with a table of vendors waiting for a reply](./images/05-04-inbox-question.png)
+![The Copilot pane in Outlook answering from the open Seri Mutiara conversation](./images/05-04-inbox-question.png)
 
-*Copilot in Outlook can answer questions across your mailbox. Copilot Chat in the Copilot app can't see your mail, so ask mail questions here.*
+*Copilot answered from the conversation you had open. To ask about another vendor, open that email first.*
 
-> **If you don't see this:** If Copilot says it can't search your mailbox, the inbox feature may not have reached your organisation yet, or your admin may have limited it. Open each email and use **Summarize** instead.
+> **Key point:** An answer that looks complete may only cover what Copilot could see. Here it found one vendor, not three. Always ask yourself what Copilot was looking at.
 
-<!-- VERIFY: Copilot Chat (Basic) users can ask questions across their inbox in the Outlook Copilot pane (Microsoft announced general availability in January 2026). -->
+> **If you don't see this:** Microsoft is extending Copilot in Outlook to search across the whole mailbox for Basic users, so yours may find all three vendors. If it does, check the table against each email anyway.
 
 ---
 
@@ -129,21 +130,19 @@ The Copilot pane can look across your mailbox and calendar, not just the email i
 Policy Section 5.2 says an expired quotation must be revalidated **in writing**. Seri Mutiara's follow-up says the price hasn't changed, but an email isn't a revalidated quotation. Ask for one.
 
 1. Open the Seri Mutiara conversation and select **Reply**.
-2. In the toolbar, select the **Copilot** icon, then **Draft with Copilot**.
-3. Paste the prompt below into the box, then select **Generate**.
+2. Select the **Copilot** button to open the pane, if it isn't open already.
+3. Paste the prompt below into the pane and send it.
 
    ```
    Thank Nur Aisyah for confirming the price is unchanged. Ask her to issue a revalidated quotation in writing for the same 25 laptops, bags and imaging service, with a new date and a validity period of at least 30 days. Ask her to hold the 25 units while we complete our internal approval. Polite, brief, and in British English.
    ```
 
-4. Read the draft. Use the options under it to adjust, for example make it more formal or shorter, or type a change in the box such as `Mention that we need it by Friday.`
-5. When you're happy, select **Keep it** (or **Insert**). The draft moves into your reply.
+4. Read the draft in the pane. To change it, ask in the pane, for example `Make it shorter, and mention that we need it by Friday.`
+5. When you're happy, copy the draft and paste it into your reply.
 
-<!-- VERIFY: "Generate", the tone and length options, and "Keep it" are the current labels in Draft with Copilot. -->
+![The Copilot pane with the prompt and a drafted reply, next to an open reply to Seri Mutiara](./images/05-05-draft-revalidation.png)
 
-![The Draft with Copilot box with the prompt entered and a generated reply below it](./images/05-05-draft-revalidation.png)
-
-*Copilot drafts. You read, adjust and decide whether to send.*
+*Copilot drafts in the pane. You copy, adjust and decide whether to send.*
 
 6. Read the email once more in the reply window. Check the quotation number, the quantity and the name. This reply goes to you, so you can send it, or close it and keep it in **Drafts**.
 
@@ -156,15 +155,15 @@ Policy Section 5.2 says an expired quotation must be revalidated **in writing**.
 Policy Section 6.4 says an arithmetic error must be corrected by the vendor in a revised quotation. Pinnacle Komputer has emailed to ask when you'll decide. Use your reply to raise the error.
 
 1. Open the Pinnacle Komputer email and select **Reply**.
-2. Select **Copilot** > **Draft with Copilot**.
-3. Replace the two figures in square brackets with the printed grand total and the correct grand total you found in 4.5, then select **Generate**.
+2. Open the **Copilot** pane.
+3. Replace the two figures in square brackets with the printed grand total and the correct grand total you found in 4.5, then send it in the pane.
 
    ```
    Thank Kelvin for the delivery update. Explain that while checking quotation PKS/Q/2026/0917 we found the grand total is printed as RM[printed grand total], but the subtotal plus tax comes to RM[correct grand total]. Ask him to check and issue a revised quotation with the correct total. Say we expect to decide once all quotations are confirmed. Polite and factual, no blame.
    ```
 
 4. Check the draft. The two figures must match what you wrote, exactly. Copilot sometimes rounds or retypes numbers.
-5. Keep the draft or send it to yourself.
+5. Copy the draft into your reply. Keep it in **Drafts** or send it to yourself.
 
 ![A drafted reply to Pinnacle Komputer asking for a corrected quotation](./images/05-06-draft-correction.png)
 
@@ -176,7 +175,7 @@ Policy Section 6.4 says an arithmetic error must be corrected by the vendor in a
 
 ## Independent Practice
 
-Reply to the Cyberjaya Digital email with **Draft with Copilot**. Ask for a revised quotation that includes the 3-year onsite warranty upgrade, so all three quotations are like-for-like in writing. Then check the draft mentions the right quotation number and warranty.
+Reply to the Cyberjaya Digital email, drafting your reply in the Copilot pane. Ask for a revised quotation that includes the 3-year onsite warranty upgrade, so all three quotations are like-for-like in writing. Then check the draft mentions the right quotation number and warranty.
 
 ---
 

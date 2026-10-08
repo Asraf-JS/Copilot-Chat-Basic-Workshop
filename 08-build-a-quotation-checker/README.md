@@ -15,7 +15,7 @@ The checks you ran in Chapter 4 took an hour and about a dozen prompts. The next
 - Use two prebuilt agents: Writing Coach and Prompt Coach
 - Create an agent in Agent Builder
 - Write agent instructions that turn a checklist into a repeatable review
-- Add starter prompts
+- Add suggested prompts
 - Test an agent against known problems
 - Share an agent with a colleague
 
@@ -35,8 +35,8 @@ Microsoft includes some ready-made agents. Try two before you build your own.
 
 **Writing Coach**
 
-1. In the Copilot app, select **Agents** in the left pane (or **All agents**).
-2. Select **Writing Coach**.
+1. In the Copilot app, select **Agents** in the left pane. The **Agent Store** opens.
+2. Search for **Writing Coach** and open it.
 3. Paste the recommendation paragraph from your justification memo (Chapter 6) with the prompt below, then send:
 
    ```
@@ -51,7 +51,7 @@ Microsoft includes some ready-made agents. Try two before you build your own.
 
 **Prompt Coach**
 
-4. Go back to **Agents** and select **Prompt Coach**.
+4. Go back to **Agents** and open **Prompt Coach**.
 5. Send it a weak prompt to improve:
 
    ```
@@ -60,23 +60,23 @@ Microsoft includes some ready-made agents. Try two before you build your own.
 
 6. Keep the improved prompt. It's a good start for your agent's instructions.
 
-<!-- VERIFY: "Agents" in the left pane, and that Writing Coach, Prompt Coach and Visual Creator are listed for Copilot Chat (Basic) users. -->
+<!-- VERIFY: capture 08-01 in a tenant where Writing Coach can be added. In the training tenant, Add reports no permission and asks for the IT admin. -->
 
-> **If you don't see this:** Your admin decides which agents you see. If Writing Coach or Prompt Coach is missing, skip to 8.2. If **Agents** is missing completely, agents are turned off for your account, and the rest of this chapter is a trainer demo.
+> **If you don't see this:** Your admin decides which agents you can use. If Writing Coach says you don't have permission, send the same prompt in a normal Copilot chat instead: it does the same job. If Prompt Coach is missing, skip to 8.2. If **Agents** is missing completely, agents are turned off for your account, and the rest of this chapter is a trainer demo.
 
 ---
 
 ## 8.2 Open Agent Builder
 
-1. In the left pane, select **Create agent** (it may be under **Agents** as **New agent**).
-2. Agent Builder opens with two tabs: **Describe**, where you build the agent by chatting, and **Configure**, where you fill in each setting yourself.
-3. Select **Configure**. You'll fill in each field, so you know exactly what the agent has been told.
+1. Select **Agents** in the left pane, then **New agent**.
+2. Agent Builder opens with **Build your own specialist agent** and a box to describe your agent in a chat. Select **Skip**: you'll fill in each field yourself, so you know exactly what the agent has been told.
+3. The form opens, with name, description and instructions at the top. If a **What's new in Agent Builder** box appears, select **Got it**.
 
-<!-- VERIFY: "Create agent" / "New agent" wording and the Describe and Configure tabs in Agent Builder for Basic users. -->
+<!-- VERIFY: retake 08-02 without the What's new in Agent Builder box covering the form. -->
 
-![Agent Builder open on the Configure tab, with empty name, description and instructions fields](./images/08-02-agent-builder.png)
+![Agent Builder's form, with the agent name, description and instructions fields](./images/08-02-agent-builder.png)
 
-*Configure shows every setting on one screen. The test pane on the right lets you try the agent as you build it.*
+*The form shows every setting on one page: name, description, instructions, knowledge and suggested prompts.*
 
 ---
 
@@ -129,20 +129,18 @@ The instructions are the most important part. They're the same checks you ran in
 
 *Numbered steps make the agent work through the checks in the same order every time.*
 
-3. Look for **Knowledge** below the instructions. Leave it empty. This agent doesn't need web pages, and Basic can't add files or SharePoint as knowledge.
-4. If there's an option to search the web, turn it off, so the agent sticks to the quotations you upload.
-
-<!-- VERIFY: the Knowledge section layout and the web search toggle in Configure for Basic users. -->
+3. Scroll to **Knowledge**. Don't select **Add knowledge**: this agent doesn't need any, and Basic can't add files or SharePoint as knowledge.
+4. Under **Knowledge**, turn off the **Web search** switch, so the agent sticks to the quotations you upload.
 
 > **Key point:** An agent is only as good as its instructions. Rule 1 (ask for the date) and the "never correct silently" line in step 4 fix the two mistakes Copilot made most often in Chapter 4.
 
 ---
 
-## 8.5 Add Starter Prompts
+## 8.5 Add Suggested Prompts
 
-Starter prompts are buttons people see when they open the agent. They show colleagues how to use it.
+Suggested prompts are buttons people see when they open the agent. They show colleagues how to use it.
 
-1. Find **Starter prompts** and add these three. Each one has a title and a message.
+1. Scroll to **Suggested prompts** and add these three with **Add a suggested prompt**. Each one has a title and a message.
 
 | Title | Message |
 |-------|---------|
@@ -150,43 +148,49 @@ Starter prompts are buttons people see when they open the agent. They show colle
 | Compare quotations | `Check the quotations I've uploaded and tell me whether they're like-for-like. Today's date is [today's date].` |
 | What's missing? | `List anything missing from the quotation I've uploaded, and draft one question to the supplier for each item.` |
 
-![The Starter prompts section with three prompts added](./images/08-04-starter-prompts.png)
+![The Suggested prompts section with three prompts added](./images/08-04-starter-prompts.png)
 
-*Starter prompts appear as buttons when someone opens the agent.*
+*Suggested prompts appear as buttons when someone opens the agent.*
 
 ---
 
-## 8.6 Test the Agent with the Quotations
+## 8.6 Create and Test the Agent
 
 Test the agent against the quotations you already know the answers to. If it finds the three problems, it's ready.
 
-1. In the test pane on the right, upload `quotation-pinnacle-komputer.pdf`.
-2. Send `Check this quotation. Today's date is [today's date].` with today's date filled in.
-3. Did it find the arithmetic error? Did it show the printed and correct totals side by side?
-4. Upload `quotation-seri-mutiara.pdf` and `quotation-cyberjaya-digital.pdf`. Send `Check these two as well, and tell me whether all three are like-for-like.`
-5. Check it flagged the expired quotation and the warranty difference.
+1. Select **Create** at the top right. The confirmation says the agent is private: only you can use it until you share it in 8.7.
+2. Open the agent's chat (from the confirmation, or **Agents** in the left pane) and upload `quotation-pinnacle-komputer.pdf`.
+3. Send `Check this quotation. Today's date is [today's date].` with today's date filled in.
+4. Did it find the arithmetic error? Did it show the printed and correct totals side by side?
+5. Upload `quotation-seri-mutiara.pdf` and `quotation-cyberjaya-digital.pdf`. Send `Check these two as well, and tell me whether all three are like-for-like.`
+6. Check it flagged the expired quotation and the warranty difference.
 
-<!-- VERIFY: whether files can be uploaded in the Agent Builder test pane for Basic users. If not, test after creating the agent (8.7). -->
+Agents miss things too. When we built this agent, it caught the expired quotation and the warranty difference, but said Pinnacle's total was correct: it claimed 90,975 + 7,278 = 98,523, which is wrong. That's why you test against answers you already know.
 
-![The test pane showing the agent's check of the Pinnacle Komputer quotation, with the grand total difference highlighted](./images/08-05-test-agent.png)
+7. If it missed the arithmetic error, open the agent, select **Edit**, and add this line to the end of step 4 in the instructions:
 
-*The agent found the same error you found by hand in Chapter 4, in one prompt.*
+   ```
+   Before comparing, write out subtotal + tax = your total as a sum. Never assume the printed grand total is correct.
+   ```
 
-6. If it missed something, add a line to the instructions that tells it what to do, then test again. For example, if it didn't ask for the date, make Rule 1 the very first line.
+8. Select **Update**, start a new chat with the agent, and test the Pinnacle quotation again.
 
-> **If you don't see this:** If you can't upload files in the test pane, create the agent first (8.7), open it from **Agents**, and test it there. If an upload fails at a busy time, wait a minute and try again.
+<!-- VERIFY: retake 08-05 after adding the extra line, showing the agent catching the Pinnacle total. -->
+
+![The agent's check of the Pinnacle Komputer quotation, with the printed and correct grand totals side by side](./images/08-05-test-agent.png)
+
+*After one extra line in its instructions, the agent catches the error you found by hand in Chapter 4.*
+
+> **If you don't see this:** If an upload fails at a busy time, wait a minute and try again. If the agent still misses the error after the extra line, that's worth knowing too: keep checking totals yourself, whatever the agent says.
 
 ---
 
-## 8.7 Create and Share the Agent
+## 8.7 Share the Agent
 
-1. Select **Create** at the top right. Agent Builder creates the agent and shows a confirmation.
-2. Select **Share** (or copy the link from the confirmation).
-3. Choose who can use it. For this course, share it with the person your trainer pairs you with.
-4. Copy the link and send it to them in Teams.
-5. Open your agent from **Agents** in the left pane, and use a starter prompt with one of the quotations.
-
-<!-- VERIFY: the share options after "Create" (specific people, anyone in the organisation) and whether admins can restrict agent sharing for Basic users. -->
+1. Open the agent in Agent Builder and select **Share**.
+2. In **Add a name, group, or email**, type the person your trainer pairs you with. (The **Org-wide sharing** switch would share it with everyone in your organisation. Leave it off.)
+3. Select **Copy chat link** and send the link to them in Teams.
+4. Ask them to open it and use a suggested prompt with one of the quotations.
 
 ![The agent created, with the Share option and the sharing link](./images/08-06-share-agent.png)
 
@@ -206,7 +210,7 @@ Update the agent so it also checks payment terms, and flags any quotation that a
 
 | Symptom | What to check |
 |---------|---------------|
-| The agent checks validity without asking for the date | Put Rule 1 at the top of the instructions, and include the date in your starter prompts |
+| The agent checks validity without asking for the date | Put Rule 1 at the top of the instructions, and include the date in your suggested prompts |
 | The agent quietly corrects a vendor's total | Add "Show the printed figure and your figure side by side" to step 4 |
 | The agent says it has no files | You're in a new chat with the agent. Upload the quotation again |
 | Create or Share is greyed out | Your admin may limit who can create or share agents. Ask your trainer |

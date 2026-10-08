@@ -6,7 +6,7 @@ Prompts for the four extra exercises. Hover over a grey box and click the copy i
 
 ## Exercise A: Writing Coach
 
-**Session:** Writing Coach | **Grounding:** your pasted text
+**Session:** Writing Coach, or a new chat | **Grounding:** your pasted text
 
 ```
 Help me improve this announcement to managers of new staff. Keep all the facts, make it friendlier and clearer, and keep it under 120 words. Tell me what you changed and why.
@@ -23,9 +23,9 @@ Make the opening friendlier, and keep it under 120 words.
 
 ---
 
-## Exercise B: Visual Creator
+## Exercise B: Make an image
 
-**Session:** Visual Creator | **Grounding:** none
+**Session:** new chat | **Grounding:** none
 
 ```
 Create a clean, modern image for an office notice about new laptop collection day. Show a neat stack of closed laptops on a reception counter in a bright Malaysian office, with a few potted plants. Flat illustration style, blue and white colours, plenty of empty space at the top. No text, no words, no logos.

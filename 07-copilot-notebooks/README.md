@@ -34,20 +34,18 @@ You need:
 ## 7.1 Create a Notebook
 
 1. In the Copilot app, select **Notebooks** in the left pane.
-2. Select **New notebook** (or **Create**).
-3. Name it:
+2. Select **New notebook**.
+3. In **Notebook name**, enter the name below, then select **Next**.
 
    ```text
    Laptop purchase 2026
    ```
 
-4. Select **Create**. The Notebook opens with a space for references and a Copilot chat.
+4. The next step offers to add references. You add them in 7.2, so select **Create**. The Notebook opens with a message box and **Chat history** in the middle, and a **Content** pane on the right with **Creations** and **References**.
 
-<!-- VERIFY: "Notebooks" in the left pane, the "New notebook" button wording, and the layout of a new Notebook (references panel, chat, notes) for Basic users. -->
+![A new, empty Notebook named Laptop purchase 2026, with the Content pane on the right](./images/07-01-new-notebook.png)
 
-![A new, empty Notebook named Laptop purchase 2026](./images/07-01-new-notebook.png)
-
-*A Notebook keeps its references and its chats together, and you can come back to it any time.*
+*A Notebook keeps its references, its Pages and its chats together, and you can come back to it any time.*
 
 > **If you don't see this:** Notebooks reached Basic users from mid-June 2026, so it may still be on its way, or your admin may have turned it off. Notebooks are stored in your organisation's Microsoft 365 storage, so a full storage quota can also block them. If it's missing, watch your trainer's demo, and keep using your comparison chat and Page instead.
 
@@ -57,15 +55,13 @@ You need:
 
 Everything you add becomes a **reference**: Copilot reads it whenever you ask a question in this Notebook.
 
-1. Select **Add references** (or the **+** beside References).
-2. Upload the four PDFs from your extracted `sample-files` folder.
-3. Add the Page **Laptop purchase - comparison and memo**. Find it under Pages, or search for its name.
-4. Add the Word memo from your OneDrive.
-5. Wait until every reference shows in the list without a progress indicator.
+1. In the **Content** pane, select **Add references**.
+2. Select **Upload files** and upload the four PDFs from your extracted `sample-files` folder.
+3. Select **Add references** again, then **OneDrive files**, and pick the Word memo you exported in Chapter 6.
+4. Select **Add references** once more and search for **Laptop purchase - comparison and memo** to add your Page.
+5. Wait until every reference shows in the list under **References**.
 
-<!-- VERIFY: the "Add references" wording, whether Pages and OneDrive files can be added as references for Basic users, and any limit on the number of references. -->
-
-![The Notebook with six references listed: four PDFs, the Page and the Word memo](./images/07-02-references.png)
+![The Notebook's Content pane with six references listed: four PDFs, the Page and the Word memo](./images/07-02-references.png)
 
 *Six references, one place. Copilot can now answer from all of them together.*
 
@@ -102,7 +98,7 @@ Questions that used to need three files open at once now take one prompt.
    Write a short status update for my HOD on the laptop purchase: what's done, what's pending, and the expected next step. Five bullet points at most.
    ```
 
-> **Key point:** Copilot answers from the references you added. If a fact lives only in your inbox, such as Seri Mutiara's 7-day stock hold, the Notebook doesn't know it. Add it as a note, or paste it into your prompt.
+> **Key point:** Copilot answers from the references you added. If a fact lives only in your inbox, such as Seri Mutiara's 7-day stock hold, the Notebook doesn't know it. Add it to a Page in the Notebook, or paste it into your prompt.
 
 ---
 
@@ -110,20 +106,18 @@ Questions that used to need three files open at once now take one prompt.
 
 A Notebook is only useful while it's current.
 
-1. Add a note to the Notebook with the facts from Chapter 5 that aren't in any reference. Select the option to add a note, then paste:
+1. Put the facts from Chapter 5 that aren't in any reference into a Page inside the Notebook. In the **Content** pane, select **New Page**, give it the title `Vendor emails`, then paste:
 
    ```text
    Vendor emails, [today's date]: Seri Mutiara confirmed pricing is unchanged and is holding 25 units for 7 days; a revalidated quotation will follow once we confirm. Cyberjaya Digital offered the 3-year onsite warranty upgrade at RM280 per unit. Pinnacle Komputer has been asked to correct its grand total.
    ```
 
-2. Replace `[today's date]` before you save the note.
+2. Replace `[today's date]`. The Page saves as you type and appears under **Creations**, where Copilot can use it like a reference.
 3. When a revised quotation arrives, upload it here and remove the version it replaces, so Copilot doesn't mix the two.
 
-<!-- VERIFY: whether Notebooks support notes for Basic users and the control's name. If not, put this text in a Page and add the Page as a reference. -->
+![The Notebook with the Vendor emails Page listed under Creations, above the references](./images/07-04-notebook-note.png)
 
-![The Notebook with a note added under the references](./images/07-04-notebook-note.png)
-
-*Notes fill the gaps between documents: phone calls, emails and decisions.*
+*A Page in the Notebook fills the gaps between documents: phone calls, emails and decisions.*
 
 > **Important:** Remove superseded documents. If both the expired and the revalidated quotation are in the Notebook, Copilot may quote the wrong one.
 
@@ -149,6 +143,6 @@ Ask the Notebook: `Which vendor would be ready to approve first, and what exactl
 
 ## Lesson Summary
 
-You put the whole purchase into one Notebook, asked questions that drew on every document at once, and added a note to fill the gaps. When the revised quotations arrive, they go in the same Notebook. Next, you build an agent that runs the Chapter 4 checks for you on any quotation.
+You put the whole purchase into one Notebook, asked questions that drew on every document at once, and added a Page to fill the gaps. When the revised quotations arrive, they go in the same Notebook. Next, you build an agent that runs the Chapter 4 checks for you on any quotation.
 
-**Check yourself:** Why add the Chapter 5 email facts as a note, and why remove a quotation once a revised one arrives?
+**Check yourself:** Why add the Chapter 5 email facts as a Page, and why remove a quotation once a revised one arrives?

@@ -24,7 +24,7 @@ Improve this prompt using clear goal, context, source and expectations: "check t
 
 ## Part 2: Agent details and instructions
 
-**Session:** Agent Builder, Configure tab | **Grounding:** instructions only
+**Session:** Agent Builder form (after Skip) | **Grounding:** instructions only
 
 Name (text):
 
@@ -62,9 +62,9 @@ Rules:
 
 ---
 
-## Part 3: Starter prompts
+## Part 3: Suggested prompts
 
-**Session:** Agent Builder, Starter prompts | **Grounding:** none
+**Session:** Agent Builder, Suggested prompts | **Grounding:** none
 
 Title: **Check a quotation**
 
@@ -88,7 +88,7 @@ List anything missing from the quotation I've uploaded, and draft one question t
 
 ## Part 4: Testing the agent
 
-**Session:** test pane, or the agent after you create it | **Grounding:** uploaded quotations
+**Session:** the agent's chat, after you create it | **Grounding:** uploaded quotations
 
 Upload `quotation-pinnacle-komputer.pdf` first. Replace `[today's date]`.
 
@@ -100,6 +100,14 @@ Then upload `quotation-seri-mutiara.pdf` and `quotation-cyberjaya-digital.pdf`:
 
 ```
 Check these two as well, and tell me whether all three are like-for-like.
+```
+
+---
+
+If the agent misses the Pinnacle arithmetic error, add this line to the end of step 4 in the instructions, select **Update**, and test again:
+
+```
+Before comparing, write out subtotal + tax = your total as a sum. Never assume the printed grand total is correct.
 ```
 
 ---
