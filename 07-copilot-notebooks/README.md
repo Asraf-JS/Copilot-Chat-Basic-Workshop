@@ -1,5 +1,7 @@
 # 07 - Keep It Together in a Notebook
 
+> **The purchase so far:** The comparison and the memo are on a Page and exported to Word (Chapter 6). The vendors' revised quotations are still on their way.
+
 By now the laptop purchase is spread across a chat, a Page, a Word document, some PDFs and your inbox. When the revised quotations arrive next week, you'll want everything in one place, with Copilot able to answer questions across all of it. That's what a Copilot Notebook is for.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
