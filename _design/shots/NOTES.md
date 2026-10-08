@@ -125,3 +125,5 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 11-extra-practice, A result: README says the announcement has the collection date and keeps all facts; UI shows the supplied draft only says the stated date; the revision uses scheduled date and adds security and allocation wording absent from the draft.
 
 - 11-extra-practice, B: README says Visual Creator generates a notice image; UI shows normal Copilot Chat generated a blue and white laptop notice image with the same prompt; the image was not posted.
+
+- 08-build-a-quotation-checker, 8.6 / 08-05 retake: README says add the extra line to step 4, Update and test Pinnacle again; UI shows the existing Quotation Checker was updated and a new chat shows the printed RM98,523 and recalculated RM98,253, a RM270 discrepancy.
