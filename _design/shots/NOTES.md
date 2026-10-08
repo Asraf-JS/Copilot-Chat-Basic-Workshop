@@ -125,3 +125,5 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 11-extra-practice, A result: README says the announcement has the collection date and keeps all facts; UI shows the supplied draft only says the stated date; the revision uses scheduled date and adds security and allocation wording absent from the draft.
 
 - 11-extra-practice, B: README says Visual Creator generates a notice image; UI shows normal Copilot Chat generated a blue and white laptop notice image with the same prompt; the image was not posted.
+
+- 08-build-a-quotation-checker, 8.2 / 08-02 retake: README says dismiss the What's new in Agent Builder box with Got it before capturing the form; UI shows the onboarding box is closed and the name, description and instructions form is visible; Create was not selected and no agent was created.
