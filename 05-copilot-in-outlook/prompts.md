@@ -2,7 +2,7 @@
 
 The vendor emails to send yourself, and the prompts for Copilot in Outlook. Hover over a grey box and click the copy icon in its top-right corner. Anything marked **text** is pasted straight into an email.
 
-> **Session guide:** these prompts run in Outlook on the web, not in the Copilot app. Part 2 uses **Summarize** on an open email, Part 3 uses the **Copilot pane**, and Part 4 uses **Draft with Copilot** in a reply.
+> **Session guide:** these prompts run in Outlook on the web, not in the Copilot app. Part 2 uses **Summarize this email** on an open email, and Parts 3 and 4 use the **Copilot pane**, which works with the email you have open.
 
 ---
 
@@ -114,9 +114,9 @@ Tel: 019-277 5103
 
 ## Part 2: Summarising
 
-**Session:** open email, Summarize | **Grounding:** the email thread
+**Session:** open email, Summarize this email | **Grounding:** the email thread
 
-No prompt needed: open the Seri Mutiara conversation and select **Summarize**. Then check the summary reflects the latest message.
+No prompt needed: open the Seri Mutiara conversation and select **Summarize this email**. Then check the summary reflects the latest message.
 
 ---
 
@@ -142,7 +142,7 @@ The vendor is the person who signs each email, not the sender. Please answer aga
 
 ## Part 4: Drafting replies
 
-**Session:** Reply, then Draft with Copilot | **Grounding:** the email you're replying to
+**Session:** Reply, then the Copilot pane | **Grounding:** the email you have open
 
 **Seri Mutiara: request a revalidated quotation**
 

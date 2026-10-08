@@ -14,14 +14,12 @@ Four short exercises for when you finish early, or for practice back at your des
 
 | Exercise | What you make | Practises | Where |
 |----------|---------------|-----------|-------|
-| A. Polish an announcement | A staff announcement about the new laptops | Writing Coach, iterating | Copilot app, Agents |
-| B. Make a notice image | A notice image for laptop collection day | Visual Creator, describing a picture | Copilot app, Agents |
+| A. Polish an announcement | A staff announcement about the new laptops | Writing Coach (or Copilot Chat), iterating | Copilot app, Agents |
+| B. Make a notice image | A notice image for laptop collection day | Image generation, describing a picture | Copilot app, Chat |
 | C. Improve a weak prompt | A strong GCSE prompt from a weak one | Prompt Coach, GCSE | Copilot app, Agents |
 | D. Research with sources | A short, sourced note on disposing of old laptops | Web grounding, checking sources | Copilot app, Chat |
 
-> **If you don't see this:** Your admin decides which prebuilt agents you see. If one is missing, do the same exercise in a normal Copilot Chat with the same prompt. Image generation can also be limited or slow at busy times with standard access: if Visual Creator says it can't make an image right now, try again later.
-
-<!-- VERIFY: Writing Coach, Prompt Coach and Visual Creator appear under Agents for Copilot Chat (Basic) users, and Visual Creator's current name. -->
+> **If you don't see this:** Your admin decides which prebuilt agents you can use. If one is missing or says you don't have permission, do the same exercise in a normal Copilot chat with the same prompt. Image generation can also be limited or slow at busy times with standard access: if Copilot says it can't make an image right now, try again later.
 
 ---
 
@@ -29,14 +27,14 @@ Four short exercises for when you finish early, or for practice back at your des
 
 **The problem:** The laptops are coming, and the new hires' managers need to know how collection works. Your first draft is accurate but stiff.
 
-1. In the Copilot app, select **Agents**, then **Writing Coach**.
+1. In the Copilot app, select **Agents** and open **Writing Coach**. If it says you don't have permission, select **New chat** instead.
 2. Paste the prompt from the [prompts page](./prompts.md#exercise-a-writing-coach), which includes the draft, and send it.
 3. Read the feedback. Ask for one change at a time, for example `Make the opening friendlier, and keep it under 120 words.`
 4. When you're happy, copy the final version.
 
-![Writing Coach's feedback on the laptop announcement and a revised version](./images/11-01-writing-coach.png)
+![Copilot's revised laptop announcement, with a list of what it changed and why](./images/11-01-writing-coach.png)
 
-*Writing Coach tells you what it changed and why. Use that to improve your own first drafts next time.*
+*Copilot tells you what it changed and why. Use that to improve your own first drafts next time.*
 
 **Done when:** Your announcement is under 120 words, has the date, place and what to bring, and sounds like you.
 
@@ -46,12 +44,12 @@ Four short exercises for when you finish early, or for practice back at your des
 
 **The problem:** You want a simple image for the notice board and the Teams post about laptop collection day.
 
-1. Select **Agents**, then **Visual Creator**.
-2. Send the prompt from the [prompts page](./prompts.md#exercise-b-visual-creator).
+1. Select **New chat**. Copilot Chat creates images itself, so you don't need a separate agent.
+2. Send the prompt from the [prompts page](./prompts.md#exercise-b-make-an-image).
 3. Look at the image. Ask for one change at a time, for example `Use a calmer colour scheme with blue and white.`
 4. Download the image you like best.
 
-![Visual Creator showing a generated notice image for laptop collection day](./images/11-02-visual-creator.png)
+![Copilot Chat showing a generated notice image for laptop collection day](./images/11-02-visual-creator.png)
 
 *Describe the scene, the style and the colours. Leave the exact words for the notice text itself.*
 
@@ -97,4 +95,4 @@ Four short exercises for when you finish early, or for practice back at your des
 
 ## Lesson Summary
 
-Writing Coach, Visual Creator and Prompt Coach are ready-made agents you can use any time. Web research with sources works best when you check the sources yourself. All four exercises use what comes with your Basic license, so you can keep practising at your desk tomorrow.
+Writing Coach and Prompt Coach are ready-made agents, and Copilot Chat can make images on its own. Web research with sources works best when you check the sources yourself. All four exercises use what comes with your Basic license, so you can keep practising at your desk tomorrow.

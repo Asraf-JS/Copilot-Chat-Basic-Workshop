@@ -2,7 +2,7 @@
 
 A second purchase has landed on your desk, and this time you run it yourself. You use the same stages as the laptop purchase (ask, compare, chase, draft, organise) and the agent you built in Chapter 8. Each stage tells you the goal, gives a hint, and says how to know you're done. The click-by-click steps are in the earlier chapters if you need them.
 
-> **Prompts:** the [prompts page](./prompts.md) has starter prompts for each stage. Try writing your own first, with GCSE, and use the starters only if you get stuck.
+> **Prompts:** the [prompts page](./prompts.md) has suggested prompts for each stage. Try writing your own first, with GCSE, and use the starters only if you get stuck.
 
 **Estimated time:** 45 minutes
 
@@ -46,7 +46,7 @@ Before you start, look at the brief again and note the four things every quotati
 | `quotation-bestari-skills.pdf` | Bestari Skills Academy Sdn Bhd, Kuala Lumpur |
 | `procurement-policy.pdf` | The same policy extract as Chapter 4 |
 
-> **Note:** All three providers and every detail in their quotations are fictional.
+> **Note:** All three providers and every detail in their quotations are fictional. The screenshots in this chapter are blurred where they would give away the answers.
 
 ---
 
@@ -64,7 +64,7 @@ Before you start, look at the brief again and note the four things every quotati
 
 **Goal:** A checked, like-for-like comparison of the three quotations.
 
-**Hint:** Start with your **Quotation Checker** agent. Open it from **Agents**, upload all three quotations, use the **Compare quotations** starter prompt, and give it today's date. Then start a new Copilot Chat, upload the three quotations and then the policy (Copilot takes up to three files at a time), and build the comparison table. Check every total with your calculator.
+**Hint:** Start with your **Quotation Checker** agent. Open it from **Agents**, upload all three quotations, use the **Compare quotations** suggested prompt, and give it today's date. Then start a new Copilot Chat, send the policy in its own message first, then the three quotations (Copilot takes at most three files per message), and build the comparison table. Check every total with your calculator.
 
 ![The Quotation Checker agent's results for the three training quotations](./images/10-01-agent-check.png)
 
@@ -82,7 +82,7 @@ Before you start, look at the brief again and note the four things every quotati
 
 **Goal:** One email to each provider asking for exactly what you need to fix its quotation.
 
-**Hint:** In Outlook, create a **New mail** to yourself with a subject starting `[CCB TRAINING]`, then use **Draft with Copilot**. Give Copilot the facts in your prompt: the quotation number, the problem and what you need. Don't ask Copilot to work out figures it can't see.
+**Hint:** In Outlook, create a **New mail** to yourself with a subject starting `[CCB TRAINING]`, then draft the text in the **Copilot** pane and copy it into the email. Give Copilot the facts in your prompt: the quotation number, the problem and what you need. Don't ask Copilot to work out figures it can't see.
 
 **Done when:** You have three drafts. Each one names the quotation number, explains the problem politely, and asks for a revised quotation or written confirmation.
 

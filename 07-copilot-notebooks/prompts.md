@@ -14,7 +14,7 @@ Notebook name (text):
 Laptop purchase 2026
 ```
 
-Note to add (text). Replace `[today's date]` first:
+Vendor emails Page (text). Replace `[today's date]` first:
 
 ```text
 Vendor emails, [today's date]: Seri Mutiara confirmed pricing is unchanged and is holding 25 units for 7 days; a revalidated quotation will follow once we confirm. Cyberjaya Digital offered the 3-year onsite warranty upgrade at RM280 per unit. Pinnacle Komputer has been asked to correct its grand total.

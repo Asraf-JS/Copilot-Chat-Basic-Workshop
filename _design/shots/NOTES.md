@@ -39,3 +39,89 @@ Codex adds one line here for each step where the screen did not match the notes.
 - 04-compare-the-quotations, 4.2 check / 04-02: README says four PDFs together in the message box; UI shows Upload images and files permits multiple selection but rejects more than 3 files at a time; 04-02 skipped because four cannot appear together; three quotations followed by policy in the same chat.
 
 - 04-compare-the-quotations, capture layout: README says summaries and tables with all vendors and policy; UI shows requested compact formatting of the same supplied prompts to keep vendor columns and key checks readable in one screenshot.
+
+- 04-compare-the-quotations, 4.2 / 04-02 retake: README says three quotations and the policy attached to the same message; UI shows three quotation PDFs attached and finished uploading; adding procurement-policy.pdf in a second upload did not add a fourth attachment; captured the three-file fallback before any prompt, then removed its attachments and cleared the unsent temporary chat; no saved conversation was created.
+
+- 05-copilot-in-outlook, account/navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned in the Copilot app; neither opened or used.
+
+- 05-copilot-in-outlook, 5.3: README says summary at the top of the email thread; UI shows Summarize this email opens the right-hand Copilot pane; the summary reflects unchanged pricing, the 7-day stock hold and promised written revalidation.
+
+- 05-copilot-in-outlook, 5.2 controls / 05-02: README says Summarize, compose Draft with Copilot, and the Copilot pane button; UI shows Summarize this email is above the selected thread; Chat with Copilot opens the right pane; no separate Draft with Copilot control appears in compose, so 05-02 cannot show all three requested controls.
+
+- 05-copilot-in-outlook, 5.4 inbox check: README says Basic can answer across the inbox and find all three vendors; UI shows the exact mailbox prompts returned only the selected Seri Mutiara thread, including its 7-day stock hold; removing the current email attachment did not expose the other two training conversations; the warranty query could not find Cyberjaya.
+
+- 05-copilot-in-outlook, 5.5 draft controls check: README says Generate, tone and length controls, and Keep it; UI shows no classic Draft with Copilot editor or those controls appears in this Basic compose UI; used the Outlook Copilot chat pane to generate the supplied reply prompts; drafts were not sent.
+- 06-from-chat-to-pages, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
+- 06-from-chat-to-pages, 6.1 / 06-01: README says warranty adjustment disappears after three changes; UI shows the warranty adjustment survived, but the recalculated Pinnacle total disappeared and the adjusted row reverted to its incorrect printed RM98,523.00; the complete-comparison prompt restored a separate RM98,253.00 recalculation.
+
+- 06-from-chat-to-pages, 6.2 control check: README says More options > Edit in Pages creates a Page; UI shows More options > Edit in Pages opens a Page beside the chat and automatically attaches it to the chat box.
+
+- 06-from-chat-to-pages, 6.3 editing check: README says Copilot box on the Page edits the Page directly; UI shows the chat box remains at the bottom left with the Page attached; the Status prompt offered a row in chat without applying it, so the row was inserted by hand in the Page table.
+
+- 06-from-chat-to-pages, 6.4 add-response check: README says Edit in Pages can add the memo to the existing Page; UI shows with a Page open, More options changes to Add to page and appends the second response to that Page.
+
+- 06-from-chat-to-pages, 6.5 Share check / 06-05: README says Share dialog with specific people and edit/view permissions; UI shows Share opens only Copy link and Copy component; no recipient or edit/view dialog is offered from this Page; the menu was closed without copying or sharing.
+
+- 06-from-chat-to-pages, 6.6 export check: README says Convert/Export to Word and File > Export > Download as PDF; UI shows Page More actions > Export offers Document and PDF directly; Document export was selected; the menu capture shows these labels.
+
+- 06-from-chat-to-pages, 6.4 manual editing: README says memo headings and comparison formatting are retained; UI shows the memo was placed above the comparison and fictional placeholders replaced; clipboard transfer flattened the memo headings and small tables, so formatting still needs manual tidying in the exported document.
+
+- 06-from-chat-to-pages, 6.6 Word PDF path: README says File > Export > Download as PDF; UI shows the exported document opens in Word for the web; File > Export offers Download as PDF, Download as PDF with comments and Download as ODT.
+
+- 06-from-chat-to-pages, 6.6 export result: README says Page, Word document and PDF contain the memo; UI shows Word document was created and opened; its PDF download was saved locally in the repository profile folder; the memo is above the comparison.
+- 07-copilot-notebooks, 7.1 creation check: README says Notebooks > New notebook > Create opens references, chat and notes; UI shows Notebooks > New notebook asks for Notebook name, then Next opens an add-references step and Create opens the notebook with Chat history and a Content pane containing Creations and References.
+
+- 07-copilot-notebooks, 7.2 references check: README says Add references uploads four PDFs and adds a Page and OneDrive Word memo; UI shows Add references offers Upload files and OneDrive files; the four existing training PDFs and exported Word memo were selected together, then the saved .page was found by name and added; six references are listed; no limit was reached with six.
+
+- 07-copilot-notebooks, 7.4 notes check: README says add a note under the references, or use a Page if notes are unavailable; UI shows no standalone note control is shown; New Page opens a Page within the Notebook, where the supplied Vendor emails note was entered with 14 October 2026.
+
+- 07-copilot-notebooks, 7.4 Page reference search: README says add the fallback Page as a reference; UI shows the saved Vendor emails Page appears under the Notebook Creations; searching its exact new name in Add references returned no results yet, so it could not be added as an extra reference during this run.
+
+- 07-copilot-notebooks, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
+- 08-build-a-quotation-checker, 8.1 prebuilt agents check: README says Writing Coach, Prompt Coach and Visual Creator are listed for Basic; UI shows Agent Store lists Prompt Coach and search finds a Writing Coach card; Visual Creator search returns no matching agent; Quotation Checker is not present yet.
+
+
+- 08-build-a-quotation-checker, 8.2 builder check: README says Create agent/New agent opens Describe and Configure tabs; UI shows Agent Store has New agent; the initial Build your own specialist agent screen has a Message Agent Builder box and Skip; Skip opens the form directly instead of Describe/Configure tabs.
+
+- 08-build-a-quotation-checker, 8.4 Knowledge check: README says Knowledge empty and web search disabled; UI shows Knowledge offers Add knowledge and Web search shows Search all; no knowledge was added and web-search settings were left unchanged under the no-setting-change rule.
+
+- 08-build-a-quotation-checker, 8.6 upload check: README says right-hand test pane can accept quotation files; UI shows this Builder has an Agent Builder chat and Configure form without a quotation test pane; the agent will be created first and tested in its own chat.
+
+- 08-build-a-quotation-checker, 8.7 Share check: README says share with specific people or anyone in the organisation after Create; UI shows Create succeeded and the confirmation says the agent is private and available only to you; Share was opened for inspection, with no link copied or sharing submitted.
+
+- 08-build-a-quotation-checker, 8.7 sharing options: README says specific people and organisation access options; UI shows Share Quotation Checker shows Org-wide sharing for chat access, the owner with Can edit, Copy chat link and an alternative copy-edit-link option; no specific-person entry is shown; Cancel closed it; administrator restrictions were not tested.
+
+- 08-build-a-quotation-checker, 8.6 known-error test / 08-05: README says agent finds the Pinnacle arithmetic error and shows printed and corrected totals; UI shows the exact test prompts completed and found Seri Mutiara expiry and Cyberjaya warranty differences, but the Pinnacle check incorrectly claimed 90,975 + 7,278 = 98,523 with no discrepancy; the correct sum is 98,253; 08-05 is skipped because the required error result is absent.
+
+- 08-build-a-quotation-checker, 8.1 / 08-01: README says Writing Coach gives feedback on the pasted memo paragraph; UI shows the prompt contains a paragraph placeholder, while the exact-prompt rule permits only the date replacement; paragraph substitution is awaiting approval, so this shot is skipped.
+- 09-copilot-in-office-apps, account check: README says M365 Copilot (Basic); UI shows M365 Copilot (Basic) is still shown under the account name; Researcher and Analyst remain under Pinned; neither opened or used.
+
+- 09-copilot-in-office-apps, 9.1 / 09-01: README says Home ribbon Copilot button opens a chat pane; UI shows the exported memo opens in Word for the web, but Chat with Copilot and Edit with Copilot controls are hidden and no visible Copilot button or message box is available; chapter stopped at 9.1 and shot skipped.
+
+- 09-copilot-in-office-apps, 9.2 Word actions check / 09-02: README says Basic has a chat pane and may have inline Rewrite or Draft with Copilot; UI shows no visible chat, inline Rewrite or Draft with Copilot action is available in this Word session; the rewrite prompt was not sent and shot skipped.
+
+- 09-copilot-in-office-apps, 9.3 Excel formula check / 09-03: README says Excel suggests a formula, with insertion ability to be checked; UI shows not tested because 9.1 says to stop the chapter when Word Copilot is absent; no workbook was created and shot skipped.
+- 10-capstone, 10.4 checked figures: README says verify every total and the one problem in each quotation; UI shows source PDFs confirm Ilmu RM37,260 with HRD Corp status missing; Pena printed RM2,192.40 conflicts with RM980 per participant, giving an unconfirmed RM32,886 for 30 including materials and tax; Bestari RM19,116 covers only one day.
+
+- 10-capstone, 10.6 memo review: README says memo follows every Section 7 heading with recommendation before evidence; UI shows the generated memo used six different headings and omitted budget confirmation and approval requirements; it was reorganised by hand into the seven policy items, with checked figures, mandatory HRD Corp status and all unresolved conditions; memo precedes the comparison.
+
+- 10-capstone, 10.7 Page reference: README says add the memo Page to Training purchase 2026; UI shows the four training PDFs were added, but the new memo Page was not returned by exact-name search yet.
+
+- 10-capstone, 10.5 email drafts: README says draft three chasing emails from checked findings; UI shows the Outlook compose Draft with Copilot control is unavailable and the prompt requires non-date placeholder substitutions awaiting approval; no capstone email drafts were created or sent.
+
+- 10-capstone, navigation: README says Basic account; UI shows M365 Copilot (Basic); Researcher and Analyst appear under Pinned; neither opened or used.
+
+- 10-capstone, 10.7 Notebook answer: README says Notebook lists every pending item with policy citations; UI shows the exact outstanding-items prompt considered only Pena and Bestari and treated their printed totals as approval values; its answer omitted Ilmu and the unconfirmed Pena recalculation, so it did not pass the checkpoint.
+- 11-extra-practice, A: README says Writing Coach improves the announcement; UI shows Writing Coach is listed but Add reports no permission and asks for the IT admin; the README normal-chat fallback provides the revision and explanations.
+
+- 11-extra-practice, agents check: README says Writing Coach, Prompt Coach and Visual Creator appear under Agents; UI shows Writing Coach is discoverable but blocked by admin permissions, Prompt Coach is available and usable, and no Visual Creator search result or replacement name was found; normal Copilot Chat generated the notice image.
+
+- 11-extra-practice, C.4: README says run the improved prompt in a new chat; UI shows the improved response is captured; its new wording was not submitted because the run permits only prompts.md prompts.
+
+- 11-extra-practice, D.3: README says check the publisher, date and claims in two sources; UI shows NIST SP 800-88 Rev. 2 was published September 2025 and supports sanitisation; the DOE homepage identifies DOE and collection/recovery facilities but has no publication date and does not alone verify SW110; it also contains unrelated promotional text.
+
+- 11-extra-practice, A result: README says the announcement has the collection date and keeps all facts; UI shows the supplied draft only says the stated date; the revision uses scheduled date and adds security and allocation wording absent from the draft.
+
+- 11-extra-practice, B: README says Visual Creator generates a notice image; UI shows normal Copilot Chat generated a blue and white laptop notice image with the same prompt; the image was not posted.

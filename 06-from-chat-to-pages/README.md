@@ -52,9 +52,9 @@ Try it.
    - the expired validity of the other vendor's quotation
    - the warranty adjustment that made the comparison like-for-like
 
-![The final table from a long chat, with the warranty adjustment missing](./images/06-01-chat-drift.png)
+![The final table from a long chat, where Pinnacle Komputer's total has gone back to the wrong printed figure](./images/06-01-chat-drift.png)
 
-*After three rounds of changes, one of the Chapter 4 findings has gone. Nothing in the answer says so.*
+*After three rounds of changes, the corrected Pinnacle total has quietly gone back to the wrong printed figure. Nothing in the answer says so.*
 
 **Checkpoint:** Did one of your findings disappear or change? In most classes, at least one does. If yours all survived, you were lucky, and it can still happen next time.
 
@@ -71,7 +71,7 @@ Try it.
    ```
 
 2. Check the answer against your Chapter 4 findings. Fix anything wrong now, with one more prompt, before you move it.
-3. Under the response, select **More options** (**...**), then **Edit in Pages**. The Page opens next to the chat with the response copied into it.
+3. Under the response, select **More options** (**...**), then **Edit in Pages**. The Page opens next to the chat with the response copied into it, and the Page is attached to the message box so Copilot can work with it.
 
 ![A Copilot response with the Edit in Pages option, and the new Page open beside the chat](./images/06-02-edit-in-pages.png)
 
@@ -92,19 +92,17 @@ Try it.
 A Page is a document you can type in, with Copilot built in.
 
 1. Click anywhere in the Page and type, the same as in Word. Correct any figure that doesn't match your own check.
-2. Find the Copilot box on the Page (at the bottom or the side). Send:
+2. In the message box beside the Page (the Page is attached to it), send:
 
    ```
    Add a "Status" row to the comparison table with one of these for each vendor: Ready, Needs correction, Needs revalidation, Needs revised quotation.
    ```
 
-3. Check the change. Copilot edits the Page directly, so read what it changed before you go on.
-
-<!-- VERIFY: where the Copilot prompt box sits on a Page, and whether edits are applied directly or offered for review first. -->
+3. Copilot replies in the chat with the new row, and may offer a button to insert it. If it doesn't change the Page itself, add the row to the table by hand: select the last row, then **New**, and type the values.
 
 ![The Page with the new Status row added to the comparison table](./images/06-03-page-edited.png)
 
-*You can type in the Page yourself or ask Copilot to change it. Either way, the Page keeps the result.*
+*Copilot suggests the change in the chat. The Page only changes when you insert it or type it yourself.*
 
 > **Tip:** Type small fixes yourself. It's faster than asking Copilot, and you know exactly what changed.
 
@@ -121,11 +119,10 @@ Section 7 of the policy lists what the memo must include. Ask Copilot to follow 
    ```
 
 2. Read the memo. Check that every item in Section 7 has a heading, and that the total is the right one for the recommended vendor.
-3. Under the memo, select **More options** (**...**) > **Edit in Pages** and choose to add it to your existing Page, **Laptop purchase - comparison and memo**. Move it above the comparison if it lands below.
+3. Under the memo, select **More options** (**...**). With your Page still open, the option reads **Add to page**. Select it, and the memo is added to the end of your Page.
+4. Move the memo above the comparison: select the memo text, cut it (Ctrl+X), click at the top of the Page and paste (Ctrl+V). Check the headings: they can lose their formatting on the way, so tidy them up.
 
-<!-- VERIFY: whether "Edit in Pages" can add a second response to an existing Page, or only create a new one. If only new, copy the memo and paste it into the existing Page. -->
-
-4. Replace `[budget code]` and `[HOD name]` with `ADM-IT-2026-07` and `Encik Faizal Rahman` (both fictional).
+5. Replace `[budget code]` and `[HOD name]` with `ADM-IT-2026-07` and `Encik Faizal Rahman` (both fictional).
 
 ![The Page with the justification memo above the comparison table](./images/06-04-memo.png)
 
@@ -138,14 +135,11 @@ Section 7 of the policy lists what the memo must include. Ask Copilot to follow 
 ## 6.5 Share the Page
 
 1. Select **Share** at the top right of the Page.
-2. Type the name of the person your trainer pairs you with.
-3. Choose whether they can edit or only view. For a memo you're about to send for approval, choose view.
-4. Select **Send** (or **Copy link** and paste it into a Teams chat).
-5. Ask your partner to open the link. They see the Page, but not your chat with Copilot.
+2. Select **Copy link**.
+3. Paste the link into a Teams chat with the person your trainer pairs you with.
+4. Ask your partner to open the link. They see the Page, but not your chat with Copilot.
 
-<!-- VERIFY: the Share dialog options for a Page (specific people, edit/view) for Basic users. -->
-
-![The Share dialog for a Page with a colleague's name entered and view-only selected](./images/06-05-share-page.png)
+![The Share menu on a Page, with Copy link and Copy component](./images/06-05-share-page.png)
 
 *People you share with see the Page. They don't see the chat it came from or the files you uploaded there.*
 
@@ -155,14 +149,12 @@ Section 7 of the policy lists what the memo must include. Ask Copilot to follow 
 
 Your HOD wants the memo as a document. Export the Page to Word, then save a PDF from Word.
 
-1. At the top of the Page, select the **...** (More options), then the option to export or convert to Word.
-2. Word for the web opens with your memo and comparison. The document is saved in your OneDrive.
-3. Check the formatting, especially the table. Fix anything that moved.
-4. To make a PDF: in Word for the web, select **File** > **Export** > **Download as PDF**. Open the PDF to check it.
+1. At the top of the Page, select **More actions** (**...**), then **Export**.
+2. Select **Document**. Word for the web opens with your memo and comparison, saved in your OneDrive.
+3. Check the formatting, especially the table and the memo headings. Fix anything that moved.
+4. For a PDF, go back to the Page and select **More actions** > **Export** > **PDF**. (In Word for the web, **File** > **Export** > **Download as PDF** works too.)
 
-<!-- VERIFY: the Page menu wording for "Convert to Word" / "Export to Word", whether the Page offers PDF directly, and the Word for the web path to download a PDF. -->
-
-![The Page's More options menu with the export to Word option, and the exported memo open in Word for the web](./images/06-06-export-word.png)
+![The Page's More actions menu with Export open, showing Document and PDF](./images/06-06-export-word.png)
 
 *Word for the web works without Copilot, so this step works with either Basic label.*
 
