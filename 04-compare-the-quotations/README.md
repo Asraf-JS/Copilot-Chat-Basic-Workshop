@@ -46,9 +46,9 @@ You need:
 
 ## 4.1 Download the Sample Files
 
-1. Download **[sample-files.zip](./sample-files.zip)** (one click, all four files).
-2. Open your Downloads folder, right-click the ZIP and choose **Extract All**, then **Extract**.
-3. Open one quotation and have a quick look. You'll find a letterhead, a quotation number, a date, a validity period, line items, a tax line, a grand total and the terms. That's what Copilot is about to read.
+> **Download:** **[sample-files.zip](./sample-files.zip)** (one click, all four files). Then open your Downloads folder, right-click the ZIP and choose **Extract All**, then **Extract**.
+
+Open one quotation and have a quick look. You'll find a letterhead, a quotation number, a date, a validity period, line items, a tax line, a grand total and the terms. That's what Copilot is about to read.
 
 ![The Pinnacle Komputer quotation open in a PDF viewer](./images/04-01-sample-quotation.png)
 
