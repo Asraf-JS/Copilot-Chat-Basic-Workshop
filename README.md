@@ -20,7 +20,7 @@ Each chapter has a **Notes** page with point-and-click steps and screenshots, an
 
 To copy a prompt: open the chapter's prompts page, find the prompt, and click the copy icon in the top-right corner of the grey box. Then paste it into Copilot. Copying from the box is safer than copying from the PDF, which can add line breaks in the middle of a sentence.
 
-To download everything: **[download all course files (ZIP)](https://github.com/Asraf-JS/Copilot-Chat-Basic-Workshop/archive/refs/heads/main.zip)**. Save the ZIP, then right-click it and choose **Extract All** before you open any file.
+> **Download:** **[all course files (ZIP)](https://github.com/Asraf-JS/Copilot-Chat-Basic-Workshop/archive/refs/heads/main.zip)**. Save the ZIP, then right-click it and choose **Extract All** before you open any file.
 
 To read offline or print: download the **[course book (PDF)](./Copilot-Chat-Basic-Workshop-Book.pdf)**. It has every chapter's notes and prompts in one file.
 

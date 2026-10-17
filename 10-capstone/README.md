@@ -36,8 +36,9 @@ Before you start, look at the brief again and note the four things every quotati
 
 ## 10.2 Get the Files
 
-1. Download **[sample-files.zip](./sample-files.zip)** and extract it.
-2. You have four files:
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+You have four files:
 
 | File | What it is |
 |------|------------|
