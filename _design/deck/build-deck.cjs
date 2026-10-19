@@ -210,6 +210,7 @@ function yourTurn(ch, title, items, checkpoint, notes, I) {
     bot: await icon("LuBot", B), pen: await icon("LuPenLine", B), lock: await icon("LuLock", HEX.accent3),
     bulb: await icon("LuLightbulb", B), save: await icon("LuBookmark", B), cog: await icon("LuSettings", B),
     image: await icon("LuImage", B), search: await icon("LuSearch", B), cal: await icon("LuCalendar", B),
+    pop: await icon("LuPanelRightOpen", B), eye: await icon("LuEye", B), win: await icon("LuSquareArrowOutUpRight", B), nav: await icon("LuArrowRightLeft", B),
     building: await icon("LuBuilding2", "FFFFFF"), building2: await icon("LuBuilding2", B), award: await icon("LuAward", B),
     copy: await icon("LuCopy", B), clip: await icon("LuClipboardCheck", B), info: await icon("LuTriangleAlert", HEX.accent3),
     yes: await icon("LuCircleCheck", HEX.accent5), no: await icon("LuCircleX", HEX.accent4),
@@ -291,6 +292,16 @@ function yourTurn(ch, title, items, checkpoint, notes, I) {
       [I.pdf, "Course book", "All notes and prompts in one PDF to keep"],
       [I.zip, "Sample files", "The fictional quotations and policy, in Chapters 4 and 10"],
     ], 3.1);
+  }
+  {
+    const s = content("Course site", "Four things that make today easier",
+      "Show each one live on the Chapter 1 page before the first exercise, so nobody discovers them halfway through the day.\n\nPop out: in Edge or Chrome the page moves into a window that stays on top. Edge places it, usually bottom right: drag it to the right edge once. A link inside it opens in the main window, so press Pop out again on the next chapter. In other browsers it's an ordinary window on the right.\n\nWhat should you see?: try the step first, then open the box to check. The answers are the same ones you'll go through in the debriefs.\n\nScreenshots: one click opens a screenshot in its own window. If the browser blocks pop-ups, it enlarges in the page instead.");
+    columns(s, [
+      [I.pop, "Pop out", "Keeps the steps in a narrow window beside Copilot, on top of everything", "Top of every chapter page"],
+      [I.eye, "What should you see?", "The expected result after a step. Try it first, then open the box to check", "Chapters 4 to 10"],
+      [I.win, "Screenshots", "Click any screenshot to open it full size in its own window", "On every page"],
+      [I.nav, "Previous and Next", "Move between chapters even when the side menu is hidden", "Bottom of every page"],
+    ], 2.0, { textH: 1.7 });
   }
   {
     const s = content("Ground rules", "Four rules for today",
