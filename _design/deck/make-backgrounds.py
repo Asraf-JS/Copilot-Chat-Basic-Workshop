@@ -94,6 +94,15 @@ img = ribbon(img, 1.00, 0.10, 0.9, 0.4, -0.32, TEAL, CYAN, k=0.75, x0=0.30, spre
 img = ribbon(img, 1.10, 0.08, 0.7, 2.2, -0.40, PURPLE, VIOLET, k=0.60, x0=0.40, spread=0.10, strands=30)
 save(img, "title.jpg")
 
+# Title, light alternative: near-white, soft teal and purple glows, the same two ribbons.
+img = canvas(hexrgb("F7F9FC"))
+img = glow(img, hexrgb("C9E7EC"), 0.95, 0.62, 0.40, 0.65)
+img = glow(img, hexrgb("DCD6FA"), 0.72, 0.70, 0.30, 0.55)
+img = glow(img, hexrgb("E7F6F8"), 0.25, 0.05, 0.35, 0.40)
+img = ribbon(img, 1.00, 0.10, 0.9, 0.4, -0.32, TEAL, CYAN, k=0.55, x0=0.30, spread=0.15, strands=34)
+img = ribbon(img, 1.10, 0.08, 0.7, 2.2, -0.40, PURPLE, VIOLET, k=0.45, x0=0.40, spread=0.10, strands=30)
+save(img, "title-light.jpg")
+
 # Section dividers: navy to purple, with a cyan-to-violet ribbon on the right.
 img = canvas(NAVY)
 img = glow(img, PURPLE, 0.85, 0.30, 0.45, 0.80)
@@ -151,6 +160,7 @@ save(img, "panel.jpg")
 src = np.asarray(Image.open(LOGO).convert("RGB")).astype(np.float32)
 cyan = (src[..., 2] > 180) & (src[..., 0] < 120)
 ink_alpha = np.clip((255 - src.min(axis=2)) * 1.2, 0, 255)
+ink_alpha[ink_alpha < 40] = 0  # drop the near-white halo around the mark
 for name, ink in (("logo-dark.png", (17, 17, 17)), ("logo-light.png", (255, 255, 255))):
     out = np.zeros((*src.shape[:2], 4), np.uint8)
     out[..., :3] = ink

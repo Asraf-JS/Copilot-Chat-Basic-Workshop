@@ -59,6 +59,18 @@ pres.defineSlideMaster({
     { placeholder: { options: { name: "meta", type: "body", x: 0.8, y: 6.2, w: 10.5, h: 0.4, fontSize: 14, color: C.background2, margin: 0 }, text: "" } },
   ],
 });
+// Light alternative of the title layout: dark text and logo on a pale background.
+pres.defineSlideMaster({
+  title: "Title Light",
+  background: BG("title-light"),
+  objects: [
+    LOGO("dark", 0.72, 0.5, 0.85),
+    { placeholder: { options: { name: "kicker", type: "body", x: 0.8, y: 1.6, w: 11, h: 0.4, fontSize: 16, color: C.accent2, margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.1, w: 11.5, h: 1.5, fontSize: 48, color: C.text2, valign: "top", align: "left", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "body", type: "body", x: 0.8, y: 3.7, w: 10, h: 1.0, fontSize: 22, color: C.text1, valign: "top", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "meta", type: "body", x: 0.8, y: 6.2, w: 10.5, h: 0.4, fontSize: 14, color: C.accent4, margin: 0 }, text: "" } },
+  ],
+});
 pres.defineSlideMaster({
   title: "Divider",
   background: BG("divider"),
@@ -219,14 +231,18 @@ function yourTurn(ch, title, items, checkpoint, notes, I) {
 
   // =================== WELCOME ===================
   sec("Welcome");
-  {
-    const s = slide("Title");
+  // The title slide comes in dark and light versions. The light one ships hidden:
+  // unhide it and hide the dark one to switch.
+  [["Title", false], ["Title Light", true]].forEach(([master, hidden]) => {
+    const s = slide(master);
     s.addText("One-day workshop", { placeholder: "kicker" });
     s.addText("Copilot Chat Basic Workshop", { placeholder: "title" });
     s.addText("Getting real work done with Microsoft Copilot, without the paid license", { placeholder: "body" });
     s.addText("Asraf Jaafar Sidik  |  Microsoft Certified Trainer  |  October 2026", { placeholder: "meta" });
-    s.addNotes("Welcome everyone. Introduce yourself. Today is hands-on: you will spend most of the day in Copilot, not watching slides.\n\nAsk the room: who has used Copilot at work before? Who has been told they don't have Copilot because they have no license? Today shows what you can do with what you already have.");
-  }
+    s.addNotes((hidden ? "Light version of the title slide. It's hidden: to use it, unhide this slide and hide the dark one before it.\n\n" : "") +
+      "Welcome everyone. Introduce yourself. Today is hands-on: you will spend most of the day in Copilot, not watching slides.\n\nAsk the room: who has used Copilot at work before? Who has been told they don't have Copilot because they have no license? Today shows what you can do with what you already have.");
+    s.hidden = hidden;
+  });
   {
     const s = content("Today's task", "Today you run one real purchase, start to finish",
       "Read the scenario out. Everything today serves this one purchase, so participants always know why they are doing a step.\n\nTeratai Holdings, the vendors and every person in the sample files are fictional. The policy threshold is RM20,000: above it you need three written quotations, a comparison and a justification memo before the HOD signs off.");
